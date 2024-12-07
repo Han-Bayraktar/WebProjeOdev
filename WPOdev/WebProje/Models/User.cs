@@ -11,6 +11,9 @@ namespace WebProje.Models
         public string Name { get; set; }
 
         [Required, MaxLength(50)]
+        public string Surname { get; set; }
+
+        [Required, MaxLength(50)]
         public string Email { get; set; }
 
         [Required]
