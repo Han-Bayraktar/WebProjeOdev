@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\WebProje.heccnwe7ra.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\Resimler\\login.jpeg",
+      "PackagePath": "staticwebassets\\Resimler\\login.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\Resimler\\logo.png",
       "PackagePath": "staticwebassets\\Resimler\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
+      "PackagePath": "staticwebassets\\css\\login-register.css"
     },
     {
       "Id": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
@@ -15,6 +23,10 @@
     {
       "Id": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\js\\login-register.js",
+      "PackagePath": "staticwebassets\\js\\login-register.js"
     },
     {
       "Id": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\js\\site.js",

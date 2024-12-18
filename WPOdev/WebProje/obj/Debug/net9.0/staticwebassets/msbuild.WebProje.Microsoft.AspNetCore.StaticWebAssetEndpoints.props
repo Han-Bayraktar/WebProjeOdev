@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/WebProje/css/login-register.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login-register.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RvYVzMK\u002B1wKnFm0DPTFbZCy\u002Bk34nYbFhXr3dKCc3wHI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6699"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RvYVzMK\u002B1wKnFm0DPTFbZCy\u002Bk34nYbFhXr3dKCc3wHI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 17:39:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebProje/css/login-register.u3vx6m96ln.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login-register.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u3vx6m96ln"},{"Name":"integrity","Value":"sha256-RvYVzMK\u002B1wKnFm0DPTFbZCy\u002Bk34nYbFhXr3dKCc3wHI="},{"Name":"label","Value":"_content/WebProje/css/login-register.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6699"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RvYVzMK\u002B1wKnFm0DPTFbZCy\u002Bk34nYbFhXr3dKCc3wHI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 17:39:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebProje/css/site.b9sayid5wm.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -23,6 +35,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 15:44:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebProje/js/login-register.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\login-register.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"656"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 17:40:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebProje/js/login-register.tqk1cthn4v.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\login-register.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tqk1cthn4v"},{"Name":"integrity","Value":"sha256-RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y="},{"Name":"label","Value":"_content/WebProje/js/login-register.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"656"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 17:40:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebProje/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
@@ -755,6 +779,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1117"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 15:44:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebProje/Resimler/login.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Resimler\login.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JoZv4tvDRHrgJLEkwN3EDtIXo2\u002BTHSAlTX1xemnn/rs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"94436"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022JoZv4tvDRHrgJLEkwN3EDtIXo2\u002BTHSAlTX1xemnn/rs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 17:50:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebProje/Resimler/login.q43w2wu4dq.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Resimler\login.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q43w2wu4dq"},{"Name":"integrity","Value":"sha256-JoZv4tvDRHrgJLEkwN3EDtIXo2\u002BTHSAlTX1xemnn/rs="},{"Name":"label","Value":"_content/WebProje/Resimler/login.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"94436"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022JoZv4tvDRHrgJLEkwN3EDtIXo2\u002BTHSAlTX1xemnn/rs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 17:50:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebProje/Resimler/logo.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Resimler\logo.png'))</AssetFile>

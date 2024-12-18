@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qN+ytMosMnqRidL48kuPnp+gK3ob6N3bxDj6cVPQ5VA=",
+  "Hash": "FPXJFx5tic/aqjpUc764InRZE+8lcE8dOwBaj0gr0Uc=",
   "Source": "WebProje",
   "BasePath": "_content/WebProje",
   "Mode": "Default",
@@ -710,6 +710,27 @@
       "OriginalItemSpec": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
+      "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\e4byeaggjp-tqk1cthn4v.gz",
+      "SourceId": "WebProje",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/WebProje",
+      "RelativePath": "js/login-register#[.{fingerprint=tqk1cthn4v}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\js\\login-register.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "e6ylb53g73",
+      "Integrity": "uhAdvpzO+Aq/LfMfPIUO+BK78h7wkc0LW95ebkGmiWQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\js\\login-register.js"
+    },
+    {
       "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\eyke8loawa-heccnwe7ra.gz",
       "SourceId": "WebProje",
       "SourceType": "Computed",
@@ -1277,6 +1298,27 @@
       "OriginalItemSpec": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
+      "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\vxbn2xea6m-u3vx6m96ln.gz",
+      "SourceId": "WebProje",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/WebProje",
+      "RelativePath": "css/login-register#[.{fingerprint=u3vx6m96ln}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jcjoiyecy0",
+      "Integrity": "DY5Hu/VZa4qmvsW0Bx9nuiK7PJqqF6ZtmydzdoEhyjw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css"
+    },
+    {
       "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\xh65iqg01o-356vix0kms.gz",
       "SourceId": "WebProje",
       "SourceType": "Discovered",
@@ -1403,6 +1445,27 @@
       "OriginalItemSpec": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebProje.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
+      "SourceId": "WebProje",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\",
+      "BasePath": "_content/WebProje",
+      "RelativePath": "css/login-register#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u3vx6m96ln",
+      "Integrity": "RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login-register.css"
+    },
+    {
       "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
       "SourceId": "WebProje",
       "SourceType": "Discovered",
@@ -1443,6 +1506,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\js\\login-register.js",
+      "SourceId": "WebProje",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\",
+      "BasePath": "_content/WebProje",
+      "RelativePath": "js/login-register#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqk1cthn4v",
+      "Integrity": "RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login-register.js"
     },
     {
       "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\js\\site.js",
@@ -2726,6 +2810,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\Resimler\\login.jpeg",
+      "SourceId": "WebProje",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\",
+      "BasePath": "_content/WebProje",
+      "RelativePath": "Resimler/login#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q43w2wu4dq",
+      "Integrity": "JoZv4tvDRHrgJLEkwN3EDtIXo2+THSAlTX1xemnn/rs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resimler\\login.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\Resimler\\logo.png",
       "SourceId": "WebProje",
       "SourceType": "Discovered",
@@ -2748,6 +2853,304 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/login-register.css",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\vxbn2xea6m-u3vx6m96ln.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000744601638"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1342"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DY5Hu/VZa4qmvsW0Bx9nuiK7PJqqF6ZtmydzdoEhyjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI="
+        }
+      ]
+    },
+    {
+      "Route": "css/login-register.css",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI="
+        }
+      ]
+    },
+    {
+      "Route": "css/login-register.css.gz",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\vxbn2xea6m-u3vx6m96ln.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DY5Hu/VZa4qmvsW0Bx9nuiK7PJqqF6ZtmydzdoEhyjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DY5Hu/VZa4qmvsW0Bx9nuiK7PJqqF6ZtmydzdoEhyjw="
+        }
+      ]
+    },
+    {
+      "Route": "css/login-register.u3vx6m96ln.css",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\vxbn2xea6m-u3vx6m96ln.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000744601638"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1342"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DY5Hu/VZa4qmvsW0Bx9nuiK7PJqqF6ZtmydzdoEhyjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u3vx6m96ln"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login-register.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI="
+        }
+      ]
+    },
+    {
+      "Route": "css/login-register.u3vx6m96ln.css",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u3vx6m96ln"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login-register.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RvYVzMK+1wKnFm0DPTFbZCy+k34nYbFhXr3dKCc3wHI="
+        }
+      ]
+    },
+    {
+      "Route": "css/login-register.u3vx6m96ln.css.gz",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\vxbn2xea6m-u3vx6m96ln.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DY5Hu/VZa4qmvsW0Bx9nuiK7PJqqF6ZtmydzdoEhyjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u3vx6m96ln"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login-register.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DY5Hu/VZa4qmvsW0Bx9nuiK7PJqqF6ZtmydzdoEhyjw="
+        }
+      ]
+    },
     {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-b9sayid5wm.gz",
@@ -3341,6 +3744,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
+        }
+      ]
+    },
+    {
+      "Route": "js/login-register.js",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\e4byeaggjp-tqk1cthn4v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003584229391"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "278"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uhAdvpzO+Aq/LfMfPIUO+BK78h7wkc0LW95ebkGmiWQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/login-register.js",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\js\\login-register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/login-register.js.gz",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\e4byeaggjp-tqk1cthn4v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uhAdvpzO+Aq/LfMfPIUO+BK78h7wkc0LW95ebkGmiWQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uhAdvpzO+Aq/LfMfPIUO+BK78h7wkc0LW95ebkGmiWQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/login-register.tqk1cthn4v.js",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\e4byeaggjp-tqk1cthn4v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003584229391"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "278"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uhAdvpzO+Aq/LfMfPIUO+BK78h7wkc0LW95ebkGmiWQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqk1cthn4v"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login-register.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/login-register.tqk1cthn4v.js",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\js\\login-register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqk1cthn4v"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login-register.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RQ9RGAiFXkBdPUWkKovcA9usgQb2upb8th/w7eUoj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/login-register.tqk1cthn4v.js.gz",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\e4byeaggjp-tqk1cthn4v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uhAdvpzO+Aq/LfMfPIUO+BK78h7wkc0LW95ebkGmiWQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqk1cthn4v"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login-register.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uhAdvpzO+Aq/LfMfPIUO+BK78h7wkc0LW95ebkGmiWQ="
         }
       ]
     },
@@ -21303,6 +22004,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU="
+        }
+      ]
+    },
+    {
+      "Route": "Resimler/login.jpeg",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\Resimler\\login.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "94436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JoZv4tvDRHrgJLEkwN3EDtIXo2+THSAlTX1xemnn/rs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:50:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JoZv4tvDRHrgJLEkwN3EDtIXo2+THSAlTX1xemnn/rs="
+        }
+      ]
+    },
+    {
+      "Route": "Resimler/login.q43w2wu4dq.jpeg",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\Resimler\\login.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "94436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JoZv4tvDRHrgJLEkwN3EDtIXo2+THSAlTX1xemnn/rs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 17:50:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q43w2wu4dq"
+        },
+        {
+          "Name": "label",
+          "Value": "Resimler/login.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JoZv4tvDRHrgJLEkwN3EDtIXo2+THSAlTX1xemnn/rs="
         }
       ]
     },

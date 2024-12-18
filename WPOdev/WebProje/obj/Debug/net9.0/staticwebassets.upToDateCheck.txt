@@ -30,6 +30,7 @@ C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\boo
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\js\login-register.js
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\favicon.ico
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\jquery\dist\jquery.slim.min.js
@@ -56,12 +57,15 @@ C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\boo
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\css\login-register.css
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\jquery\dist\jquery.slim.js
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\css\login-register.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\login-register.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
@@ -123,4 +127,5 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\Resimler\login.jpeg
 wwwroot\Resimler\logo.png

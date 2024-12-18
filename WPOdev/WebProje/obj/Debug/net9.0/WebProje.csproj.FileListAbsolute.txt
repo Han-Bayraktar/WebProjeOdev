@@ -661,3 +661,5 @@ C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\WebProje.pdb
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\WebProje.genruntimeconfig.cache
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\ref\WebProje.dll
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\vxbn2xea6m-u3vx6m96ln.gz
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\e4byeaggjp-tqk1cthn4v.gz
