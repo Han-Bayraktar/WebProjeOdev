@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace WebProje.Migrations
 {
     [DbContext(typeof(PostgreSqlDbContext))]
-    [Migration("20241207143624_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241219185416_Migration5")]
+    partial class Migration5
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,8 +41,12 @@ namespace WebProje.Migrations
                     b.Property<int>("ServiceId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer");
+                    b.Property<bool>("Status")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -68,6 +72,10 @@ namespace WebProje.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Specialty")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("WorkingHours")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -101,11 +109,8 @@ namespace WebProje.Migrations
 
             modelBuilder.Entity("WebProje.Models.User", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -125,9 +130,25 @@ namespace WebProje.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "8b035688-ad0f-41cb-b2bc-42d7d96b4556",
+                            Email = "b22121210034@gmail.com",
+                            Name = "Admin",
+                            Password = "sau",
+                            Role = "admin",
+                            Surname = "User"
+                        });
                 });
 
             modelBuilder.Entity("WebProje.Models.Appointment", b =>

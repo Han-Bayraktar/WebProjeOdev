@@ -19,7 +19,8 @@ namespace WebProje.Models
         [Required]
         public string Password { get; set; }
 
-        [Required]
-        public string Role { get; set; } // "Customer", "Admin"
+       
+        public string Role { get; set; } //admin veya müşteri
+        
     }
 }
