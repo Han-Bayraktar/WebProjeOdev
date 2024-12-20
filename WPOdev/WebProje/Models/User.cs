@@ -20,7 +20,7 @@ namespace WebProje.Models
         public string Password { get; set; }
 
        
-        public string Role { get; set; } //admin veya müşteri
+        public string Role { get; set; } 
         
     }
 }

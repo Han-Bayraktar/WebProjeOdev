@@ -23,34 +23,34 @@ namespace WebProje.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(string email, string password)
+        public async Task<IActionResult> Login(User user)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+            var existingUser = _context.Users.FirstOrDefault(u => u.Email == user.Email && u.Password == user.Password);
 
-            if (user == null)
+            if (existingUser == null)
             {
                 ModelState.AddModelError("", "Invalid email or password.");
                 return View();
             }
 
             var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, user.Name),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role),
-                
-            };
+    {
+        new Claim(ClaimTypes.Name, existingUser.Name),
+        new Claim(ClaimTypes.Email, existingUser.Email),
+        new Claim(ClaimTypes.Role, existingUser.Role),
+    };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-            if (user.Role == "admin")
+            // Role-based redirect
+            if (existingUser.Role == "admin")
             {
                 return RedirectToAction("Index", "Admin");
             }
             else
             {
-                return RedirectToAction("Dashboard");
+                return RedirectToAction("Index", "Home"); // Müşteri için ana sayfa
             }
         }
 
@@ -74,6 +74,12 @@ namespace WebProje.Controllers
         [HttpPost]
         public IActionResult Register(string name, string surname, string email, string password)
         {
+            if (!ModelState.IsValid)
+            {
+                // Doğrulama hatalarını kontrol edin
+                return View();
+            }
+
             if (_context.Users.Any(u => u.Email == email))
             {
                 ModelState.AddModelError("", "Email is already registered.");
@@ -86,7 +92,7 @@ namespace WebProje.Controllers
                 Surname = surname,
                 Email = email,
                 Password = password,
-                Role="customer"
+                Role = "customer"
             };
 
             _context.Users.Add(user);
@@ -94,13 +100,16 @@ namespace WebProje.Controllers
 
             return RedirectToAction("Login");
         }
-
+        
         [Authorize]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Login");
+            return RedirectToAction("Index", "Home"); // Giriş sayfasına yönlendir
         }
+
+
+
     }
 
 

@@ -1,13 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebProje.Models; // Add this line if Service class is in Models namespace
 
 namespace WebProje.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
-        public IActionResult Dashboard()
+        public IActionResult Index()
         {
-            // Yönetim paneli
             return View();
         }
 

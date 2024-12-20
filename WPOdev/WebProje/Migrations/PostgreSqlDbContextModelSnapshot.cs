@@ -141,7 +141,7 @@ namespace WebProje.Migrations
                     b.HasData(
                         new
                         {
-                            Id = -1,
+                            Id = 1,
                             Email = "b22121210034@gmail.com",
                             Name = "Admin",
                             Password = "sau",

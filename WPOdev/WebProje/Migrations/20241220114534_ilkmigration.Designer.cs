@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace WebProje.Migrations
 {
     [DbContext(typeof(PostgreSqlDbContext))]
-    [Migration("20241207160019_Migration3")]
-    partial class Migration3
+    [Migration("20241220114534_ilkmigration")]
+    partial class ilkmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,6 +71,10 @@ namespace WebProje.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Specialty")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("WorkingHours")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -136,6 +140,17 @@ namespace WebProje.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "b22121210034@gmail.com",
+                            Name = "Admin",
+                            Password = "sau",
+                            Role = "admin",
+                            Surname = "User"
+                        });
                 });
 
             modelBuilder.Entity("WebProje.Models.Appointment", b =>

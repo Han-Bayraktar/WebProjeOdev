@@ -1,11 +1,22 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Database context configuration
 builder.Services.AddDbContext<PostgreSqlDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Authentication configuration
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login"; // Giriþ yolu
+        options.AccessDeniedPath = "/Account/AccessDenied"; // Eriþim reddedildi yolu
+    });
 
 var app = builder.Build();
 
@@ -20,14 +31,16 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
-app.UseAuthorization();
+// Authentication and Authorization middleware
+app.UseAuthentication();  // Kimlik doðrulama middleware'ini ekleyin
+app.UseAuthorization();   // Yetkilendirme middleware'ini ekleyin
 
 app.MapStaticAssets();
 
+// Route configuration
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
-
 
 app.Run();
