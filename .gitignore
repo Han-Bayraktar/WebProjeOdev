@@ -4,3 +4,12 @@
 
 *.vsidx
 /WPOdev/.vs/WebProje/copilot-chat/3f59d3ce/sessions
+/WPOdev/.vs/WebProje/CopilotIndices/17.12.38.29086/SemanticSymbols.db-shm
+/WPOdev/.vs/WebProje/CopilotIndices/17.12.38.29086/CodeChunks.db
+/WPOdev/.vs/WebProje/CopilotIndices/17.12.38.29086/CodeChunks.db-wal
+/WPOdev/.vs/WebProje/CopilotIndices/17.12.38.29086/CodeChunks.db-shm
+/WPOdev/.vs/WebProje/CopilotIndices/17.12.38.29086/SemanticSymbols.db
+/WPOdev/.vs/WebProje/CopilotIndices/17.12.38.29086/SemanticSymbols.db-wal
+/WPOdev/WebProje/Migrations
+/.gitignore
+/.gitignore
