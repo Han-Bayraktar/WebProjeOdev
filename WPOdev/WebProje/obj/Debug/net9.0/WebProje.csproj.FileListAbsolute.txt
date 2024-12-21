@@ -773,10 +773,8 @@ D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtm
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\scopedcss\bundle\WebProje.styles.css
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\scopedcss\projectbundle\WebProje.bundle.scp.css
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\vxbn2xea6m-u3vx6m96ln.gz
-D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-b9sayid5wm.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\f1kshzyvhe-61n19gt1b8.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\e4byeaggjp-tqk1cthn4v.gz
-D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-xtxxf3hu2r.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\zrvt1zan2r-t1cqhe9u97.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\562ui13htz-c2jlpeoesf.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\dwwpfaws80-sejl45xvog.gz
@@ -836,8 +834,6 @@ D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\zj479pd2tf-jjsuc0puko.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\gnl29cakpt-9vr69e8ynj.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\lmyqy7qu0y-87fc7y1x7t.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\tov5dlen48-mlv21k5csn.gz
-D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-heccnwe7ra.gz
-D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-heccnwe7ra.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\staticwebassets.build.json
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\staticwebassets.development.json
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -854,3 +850,7 @@ D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\refint\WebProje.dll
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\WebProje.pdb
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\WebProje.genruntimeconfig.cache
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\ref\WebProje.dll
+D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-heccnwe7ra.gz
+D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-heccnwe7ra.gz
+D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-30at7hh59b.gz
+D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-qnnx9e3i7f.gz

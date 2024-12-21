@@ -5,33 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - My ASP.NET Core Application</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="~/assets/css/styles.css" />
+    <link rel="stylesheet" href="~/assets/css/flickity.css" media="screen">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .navbar {
             background-color: rgba(0, 0, 0, 0.5); /* Şeffaflık */
             backdrop-filter: blur(5px); /* Arka plan bulanıklığı */
             padding-top: 20px; /* Navbar yüksekliğini artır */
             padding-bottom: 25px; /* Navbar alt kısmını hizalamak için arttır */
+            transition: background-color 0.5s ease, padding 0.5s ease; /* Geçiş efektleri */
         }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Dikey ortalama */
+            flex-grow: 1; /* Orta kısmı tam genişlikte tut */
+        }
+
+        .navbar-collapse {
+            display: flex;
+            justify-content: space-between; /* Sol ve sağ bölümleri ayır */
+            align-items: center; /* Dikey ortalama */
+        }
+
+        .nav-links {
+            position: absolute;
+            right: 0px;
+            height: 45vh;
+            top: 8vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+        }
+
+        
+
+        .navbar.solid {
+            background-color: rgba(0, 0, 0, 1); /* Mat hale getirme */
+            padding-top: 10px; /* Navbar yüksekliğini azalt */
+            padding-bottom: 10px; /* Navbar alt kısmını hizalamak için azalt */
+        }
+
         .btn-custom {
             background-color: black;
             color: white;
             border-radius: 20px;
             padding: 5px 15px;
+            margin-left: auto;
         }
-        .btn-custom:hover {
-            background-color: #444;
-        }
+
+            .btn-custom:hover {
+                background-color: #444;
+            }
 
         /* Logo stilleri */
         .navbar-brand {
+            display: none; /* Başlangıçta gizli */
             position: relative; /* Logo için konumlandırma */
+            justify-content: flex-start; /* Logoyu sola hizala */
+            align-items: center;
         }
+
+        .navbar.solid .navbar-brand {
+            display: flex; /* Kaydırıldığında görünür */
+        }
+
         .navbar-brand img {
-            width: 120px; /* Resmin genişliğini artırın */
-            height: 130px; /* Yüksekliği orantılı tutarak genişliği artırın */
-            position: absolute;
-            top: 90%; /* Yatayda ortalama */
-            transform: translateY(-50%); /* Dikeyde tam ortalama */
+            width: 80px; /* Resmin genişliğini artırın */
+            height: 85px; /* Yüksekliği orantılı tutarak genişliği artırın */
+            transition: transform 0.5s ease, top 0.5s ease; /* Geçiş efektleri */
+        }
+
+        .main-logo {
+            width: 100px;
+            height: 100px;
+            
+        }
+
+
+        #Contact {
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+            #Contact span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px;
+            }
+
+        #Contact-Content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        #Contact-Details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: 40rem;
+        }
+
+        #Social-Links {
+            cursor: pointer;
+        }
+
+            #Social-Links span:hover {
+                cursor: pointer;
+                transform: scale(1.25);
+                transition: transform 0.25s ease-in;
+            }
+
+        #Hours {
+            margin-top: 1.25rem;
+        }
+
+        #Hours-Content p {
+            line-height: 34px;
+        }
+
+        footer p {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            padding: 3.125rem 3.125rem 0rem 3.125rem;
+            margin-bottom: 1.5625rem;
         }
     </style>
 </head>
@@ -41,7 +162,7 @@
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="/">
-                <img src="/Resimler/logo.png" alt="Logo" class="d-inline-block align-text-top">
+                <img src="/Resimler/logo.png" alt="Logo">
             </a>
 
             <!-- Toggle for mobile view -->
@@ -62,36 +183,36 @@
                         <a class="nav-link text-white" href="#">Online Randevu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">İletişim</a>
+                        <a class="nav-link text-white" href="#Contact">İletişim</a>
                     </li>
                 </ul>
 
                 <!-- Button for login/logout and role-based navbar -->
                 @if (User.Identity.IsAuthenticated)
                 {
-                        <ul class="navbar-nav">
+                    <ul class="navbar-nav">
                         @if (User.IsInRole("Admin"))
                         {
-                                    <!-- Admin-specific link -->
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" href="/Admin/Index">Yönetim</a>
-                                    </li>
-                        }
+                            <!-- Admin-specific link -->
                             <li class="nav-item">
-                                <!-- Logout form -->
-                                <form method="post" action="/Account/Logout" style="display:inline;">
-                                    <button type="submit" class="btn btn-custom">Çıkış</button>
-                                </form>
+                                <a class="nav-link text-white" href="/Admin/Index">Yönetim</a>
                             </li>
-                        </ul>
+                        }
+                        <li class="nav-item">
+                            <!-- Logout form -->
+                            <form method="post" action="/Account/Logout" style="display:inline;">
+                                <button type="submit" class="btn btn-custom">Çıkış</button>
+                            </form>
+                        </li>
+                    </ul>
                 }
                 else
                 {
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="btn btn-custom" href="/Account/Login">Giriş</a>
-                            </li>
-                        </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="btn btn-custom" href="/Account/Login">Giriş</a>
+                        </li>
+                    </ul>
                 }
             </div>
         </div>
@@ -104,7 +225,89 @@
         </main>
     </div>
 
+
+    
+        <!-- Contact Us Section -->
+    <div id="Contact" class="container" data-aos="fade-right">
+        <h2>Contact Us.</h2>
+        <div id="Contact-Content">
+            <div id="Contact-Details">
+                <span>
+                    <span class="material-icons">
+                        place
+                    </span>
+                    <p>2676 Eglinton Ave E, Scarborough, ON M1K 2S3</p>
+                </span>
+
+                <span>
+                    <span class="material-icons">
+                        call
+                    </span>
+                    <p>Call Us: <a href="tel:4162612716">(416) 261-2716</a></p>
+                </span>
+                <span id="Social-Links">
+                    <span>
+                        <a href="https://www.instagram.com/petersbarbershop.to/" target="_blank">
+                            <img src="./assets/icon/instagram.png" style="width: 35px; height: auto;" />
+                        </a>
+                    </span>
+                    <span href="mailto:michael.w.pereira@ryerson.ca" target="_blank" class="material-icons" style="font-size: 38px;">
+                        email
+                    </span>
+                </span>
+                <span id="Hours">
+                    <span class="material-icons">
+                        watch_later
+                    </span>
+                    <p>Business Hours</p>
+                </span>
+                <div id="Hours-Content">
+                    <p>
+                        Sunday: Closed<br>Monday: Closed<br>Tuesday: 10a.m-5:30p.m
+                        <br>Wednesday: 10a.m-5:30p.m<br>Thursday: 10a.m-6:30p.m
+                        <br>Friday: 10a.m-6:30p.m<br>Saturday: 9a.m-3:45p.m
+                    </p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.7079294181945!2d-79.25202008422065!3d43.7373939549997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce2eb1c89a15%3A0x7971bde870dbfca2!2sPeters%20Hair%20Cutting%20Place!5e0!3m2!1sen!2sca!4v1598975630124!5m2!1sen!2sca"
+                    width="600" height="525" frameborder="0" style="border-radius: 12px;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>All trademarks and logos are the property of their respective owners.</p>
+    </footer>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/scripts/flickity.pkgd.min.js"></script>
+    <script src="~/scripts/script.js"></script>
+    <script>
+        AOS.init();
+
+        // Smooth scroll for Contact link
+        $(".nav-link[href='#Contact']").click(function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $("#Contact").offset().top
+            }, 1000);
+        });
+
+        // Change navbar style on scroll
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').addClass('solid');
+                $('.navbar-brand').show();
+            } else {
+                $('.navbar').removeClass('solid');
+                $('.navbar-brand').hide();
+            }
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

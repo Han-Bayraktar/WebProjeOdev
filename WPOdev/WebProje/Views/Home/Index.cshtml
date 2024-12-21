@@ -9,12 +9,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
+	<!---Required meta tags--->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta property="og:title" content="Peter's Hair Cutting Place" />
+	<meta property="og:image" content="https://petersbarbershop.ca/assets/icon/logo.png" />
+	<meta property="og:description" content="Delivering High Quality Haircuts Since 1964" />
+	<meta property="og:site_name" content="Peter's Hair Cutting Place" />
+	<!---CSS--->
+	<link rel="stylesheet" href="~/css/site.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	
+	<!---AOS--->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!---Javascript--->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!---jQuery--->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!---Website Properties--->
+	<link rel="icon" href="~/Resimler/logo.png" />
 </head>
 <body>
     <!-- Ana sayfanın içeriği buraya gelecek -->
     <div class="container">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is your homepage content.</p>
+		<div id="Home">
+			<img id="logo" src="~/Resimler/logo.png" />
+			
+		</div>
+
     </div>
+
+	<div id="About" class="container" data-aos="fade-right">
+		<h2>Our Crew</h2>
+		<div id="About-Content">
+			<div id="Crew">
+				
+				<span>
+					<img src="~/Resimler/istockphoto-1270950948-612x612.jpg" class="grid-item-c">
+					
+				</span>
+				
+			</div>
+		</div>
+		
+		<span>
+			<p>
+				Misyonumuz kaliteli hizmet sunmak
+			</p>
+
+			<p><b>Yıllardır Avcılar-Bağcılar</b></p>
+		</span>
+	</div>
+
+
+	<div id="Gallery" class="container" data-aos="fade-right">
+		<h2>Gallery</h2>
+		<div id="Gallery-Content">
+			<img src="~/Resimler/boyama.jpeg" class="grid-item-g">
+			<img src="~/Resimler/damat.jpeg" class="grid-item-g">
+			<img src="~/Resimler/fon.jpeg" class="grid-item-g">
+			<img src="~/Resimler/sakal.jpeg" class="grid-item-g">
+			<img src="~/Resimler/perma.jpg" class="grid-item-g">
+			<img src="~/Resimler/istockphoto-1270950948-612x612.jpg" class="grid-item-g">
+		</div>
+		<div class="gallery js-flickity">
+			<div class="gallery-cell">
+				<img src="~/Resimler/istockphoto-1270950948-612x612.jpg" class="grid-item-g">
+			</div>
+			<div class="gallery-cell">
+				<img src="~/Resimler/damat.jpeg" class="grid-item-g">
+			</div>
+			<div class="gallery-cell">
+				<img src="~/Resimler/fon.jpeg" class="grid-item-g">
+			</div>
+			<div class="gallery-cell">
+				<img src="~/Resimler/sakal.jpeg" class="grid-item-g">
+			</div>
+			<div class="gallery-cell">
+				<img src="~/Resimler/perma.jpg" class="grid-item-g">
+			</div>
+			<div class="gallery-cell">
+				<img src="~/Resimler/boyama.jpeg" class="grid-item-g">
+			</div>
+		</div>
+	</div>
+
+
 </body>
 </html>
