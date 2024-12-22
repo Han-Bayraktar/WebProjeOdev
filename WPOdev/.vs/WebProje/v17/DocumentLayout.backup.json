@@ -1,122 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\webprog\\WPOdev\\",
+  "WorkspaceRootPath": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\views\\admin\\management.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\admin\\management.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\wwwroot\\js\\login-register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\js\\login-register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\wwwroot\\css\\login-register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\css\\login-register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\migrations\\20241220115608_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\migrations\\20241220115608_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\admincont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\controllers\\admincont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\admincont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\data\\postgresqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\data\\postgresqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241220111909_Migration8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebProje\\Migrations\\20241220111909_Migration8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241219191058_Migration7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebProje\\Migrations\\20241219191058_Migration7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\guestcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\guestcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\customercont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\customercont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,368 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Models\\User.cs",
-              "RelativeDocumentMoniker": "WebProje\\Models\\User.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Models\\User.cs",
-              "RelativeToolTip": "WebProje\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:43:58.36Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-18T15:25:25.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "WebProje\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\site.css*",
-              "RelativeToolTip": "WebProje\\wwwroot\\css\\site.css*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-21T19:10:20.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T17:41:39.598Z",
+              "DocumentIndex": 3,
+              "Title": "AdminCont.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Controllers\\AdminCont.cs",
+              "RelativeDocumentMoniker": "WebProje\\Controllers\\AdminCont.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Controllers\\AdminCont.cs",
+              "RelativeToolTip": "WebProje\\Controllers\\AdminCont.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T19:58:49.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "management.cshtml",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Admin\\management.cshtml",
+              "RelativeDocumentMoniker": "WebProje\\Views\\Admin\\management.cshtml",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Admin\\management.cshtml",
+              "RelativeToolTip": "WebProje\\Views\\Admin\\management.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T19:57:04.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebProje\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebProje\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAKkAAAAAAAAAAADwv7QAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T19:45:14.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebProje\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "WebProje\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAAAGAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAI8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T13:53:01.95Z",
+              "WhenOpened": "2024-12-20T12:41:49.348Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T16:55:17.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "WebProje\\wwwroot\\js\\site.js",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "WebProje\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-21T12:36:26.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "login-register.js",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\js\\login-register.js",
-              "RelativeDocumentMoniker": "WebProje\\wwwroot\\js\\login-register.js",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\js\\login-register.js",
-              "RelativeToolTip": "WebProje\\wwwroot\\js\\login-register.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-18T16:39:56.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Services.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Models\\Services.cs",
-              "RelativeDocumentMoniker": "WebProje\\Models\\Services.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Models\\Services.cs",
-              "RelativeToolTip": "WebProje\\Models\\Services.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:43:57.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "login.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Account\\login.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Account\\login.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Account\\login.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\Account\\login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T18:36:02.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "WebProje\\Models\\Appointment.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Models\\Appointment.cs",
-              "RelativeToolTip": "WebProje\\Models\\Appointment.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:43:46.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebProje\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebProje\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAwwF4AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T16:29:27.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "login-register.css",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
-              "RelativeDocumentMoniker": "WebProje\\wwwroot\\css\\login-register.css",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
-              "RelativeToolTip": "WebProje\\wwwroot\\css\\login-register.css",
-              "ViewState": "AgIAABMBAAAAAAAAAAAIwFQBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-18T16:39:24.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20241220111909_Migration8.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241220111909_Migration8.cs",
-              "RelativeDocumentMoniker": "WebProje\\Migrations\\20241220111909_Migration8.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241220111909_Migration8.cs",
-              "RelativeToolTip": "WebProje\\Migrations\\20241220111909_Migration8.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T11:19:10.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20241220115608_InitialCreate.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241220115608_InitialCreate.cs",
-              "RelativeDocumentMoniker": "WebProje\\Migrations\\20241220115608_InitialCreate.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241220115608_InitialCreate.cs",
-              "RelativeToolTip": "WebProje\\Migrations\\20241220115608_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T11:56:08.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "register.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Account\\register.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Account\\register.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Account\\register.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\Account\\register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T12:05:27.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "WebProje\\Models\\Employee.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Models\\Employee.cs",
-              "RelativeToolTip": "WebProje\\Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:43:41.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AdminCont.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AdminCont.cs",
-              "RelativeDocumentMoniker": "WebProje\\Controllers\\AdminCont.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AdminCont.cs",
-              "RelativeToolTip": "WebProje\\Controllers\\AdminCont.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T13:24:56.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "WebProje\\Models\\ErrorViewModel.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "WebProje\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:43:43.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PostgreSqlDbContext.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Data\\PostgreSqlDbContext.cs",
-              "RelativeDocumentMoniker": "WebProje\\Data\\PostgreSqlDbContext.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Data\\PostgreSqlDbContext.cs",
-              "RelativeToolTip": "WebProje\\Data\\PostgreSqlDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:27:25.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20241219191058_Migration7.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241219191058_Migration7.cs",
-              "RelativeDocumentMoniker": "WebProje\\Migrations\\20241219191058_Migration7.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241219191058_Migration7.cs",
-              "RelativeToolTip": "WebProje\\Migrations\\20241219191058_Migration7.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T19:10:58.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CustomerCont.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\CustomerCont.cs",
-              "RelativeDocumentMoniker": "WebProje\\Controllers\\CustomerCont.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\CustomerCont.cs",
-              "RelativeToolTip": "WebProje\\Controllers\\CustomerCont.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:39:27.711Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GuestCon.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\GuestCon.cs",
-              "RelativeDocumentMoniker": "WebProje\\Controllers\\GuestCon.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\GuestCon.cs",
-              "RelativeToolTip": "WebProje\\Controllers\\GuestCon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:39:19.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebProje\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebProje\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:31:46.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "WebProje\\appsettings.Development.json",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\appsettings.Development.json",
-              "RelativeToolTip": "WebProje\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-19T12:30:53.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T12:30:13.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T12:30:11.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Program.cs",
-              "RelativeDocumentMoniker": "WebProje\\Program.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Program.cs",
-              "RelativeToolTip": "WebProje\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:29:48.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\appsettings.json",
-              "RelativeDocumentMoniker": "WebProje\\appsettings.json",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\appsettings.json",
-              "RelativeToolTip": "WebProje\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-19T12:27:45.781Z"
             }
           ]
         }

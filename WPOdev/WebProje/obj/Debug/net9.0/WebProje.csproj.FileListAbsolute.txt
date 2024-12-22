@@ -581,9 +581,7 @@ C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\scopedcss\bundle\WebProje.styles.css
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\scopedcss\projectbundle\WebProje.bundle.scp.css
-C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-b9sayid5wm.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\f1kshzyvhe-61n19gt1b8.gz
-C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-xtxxf3hu2r.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\zrvt1zan2r-t1cqhe9u97.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\562ui13htz-c2jlpeoesf.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\dwwpfaws80-sejl45xvog.gz
@@ -854,3 +852,5 @@ D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-heccnwe7ra.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-heccnwe7ra.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-30at7hh59b.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-qnnx9e3i7f.gz
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-30at7hh59b.gz
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-qnnx9e3i7f.gz

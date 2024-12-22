@@ -97,56 +97,6 @@
             
         }
 
-
-        #Contact {
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-            #Contact span {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                padding: 10px;
-            }
-
-        #Contact-Content {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-        }
-
-        #Contact-Details {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            width: 40rem;
-        }
-
-        #Social-Links {
-            cursor: pointer;
-        }
-
-            #Social-Links span:hover {
-                cursor: pointer;
-                transform: scale(1.25);
-                transition: transform 0.25s ease-in;
-            }
-
-        #Hours {
-            margin-top: 1.25rem;
-        }
-
-        #Hours-Content p {
-            line-height: 34px;
-        }
-
         footer p {
             width: 100%;
             text-align: center;
@@ -191,11 +141,11 @@
                 @if (User.Identity.IsAuthenticated)
                 {
                     <ul class="navbar-nav">
-                        @if (User.IsInRole("Admin"))
+                        @if (User.IsInRole("admin"))
                         {
                             <!-- Admin-specific link -->
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="/Admin/Index">Yönetim</a>
+                                <a class="nav-link text-white" href="/Admin/management">Yönetim</a>
                             </li>
                         }
                         <li class="nav-item">
@@ -226,56 +176,6 @@
     </div>
 
 
-    
-        <!-- Contact Us Section -->
-    <div id="Contact" class="container" data-aos="fade-right">
-        <h2>Contact Us.</h2>
-        <div id="Contact-Content">
-            <div id="Contact-Details">
-                <span>
-                    <span class="material-icons">
-                        place
-                    </span>
-                    <p>2676 Eglinton Ave E, Scarborough, ON M1K 2S3</p>
-                </span>
-
-                <span>
-                    <span class="material-icons">
-                        call
-                    </span>
-                    <p>Call Us: <a href="tel:4162612716">(416) 261-2716</a></p>
-                </span>
-                <span id="Social-Links">
-                    <span>
-                        <a href="https://www.instagram.com/petersbarbershop.to/" target="_blank">
-                            <img src="./assets/icon/instagram.png" style="width: 35px; height: auto;" />
-                        </a>
-                    </span>
-                    <span href="mailto:michael.w.pereira@ryerson.ca" target="_blank" class="material-icons" style="font-size: 38px;">
-                        email
-                    </span>
-                </span>
-                <span id="Hours">
-                    <span class="material-icons">
-                        watch_later
-                    </span>
-                    <p>Business Hours</p>
-                </span>
-                <div id="Hours-Content">
-                    <p>
-                        Sunday: Closed<br>Monday: Closed<br>Tuesday: 10a.m-5:30p.m
-                        <br>Wednesday: 10a.m-5:30p.m<br>Thursday: 10a.m-6:30p.m
-                        <br>Friday: 10a.m-6:30p.m<br>Saturday: 9a.m-3:45p.m
-                    </p>
-                </div>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.7079294181945!2d-79.25202008422065!3d43.7373939549997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce2eb1c89a15%3A0x7971bde870dbfca2!2sPeters%20Hair%20Cutting%20Place!5e0!3m2!1sen!2sca!4v1598975630124!5m2!1sen!2sca"
-                    width="600" height="525" frameborder="0" style="border-radius: 12px;" allowfullscreen=""
-                    aria-hidden="false" tabindex="0">
-            </iframe>
-        </div>
-    </div>
-
     <footer>
         <p>All trademarks and logos are the property of their respective owners.</p>
     </footer>
@@ -289,15 +189,7 @@
     <script>
         AOS.init();
 
-        // Smooth scroll for Contact link
-        $(".nav-link[href='#Contact']").click(function (e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: $("#Contact").offset().top
-            }, 1000);
-        });
-
-        // Change navbar style on scroll
+       // Change navbar style on scroll
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
                 $('.navbar').addClass('solid');

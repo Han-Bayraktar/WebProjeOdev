@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Admin Management";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h3>Veritabanı Tabloları</h3>
+    <ul id="tableList">
+        <li><a href="#" onclick="loadTableData('employees')">Employees</a></li>
+        <li><a href="#" onclick="loadTableData('services')">Services</a></li>
+    </ul>
+</div>
+
+<div id="tableData"></div>
+
+@section Scripts {
+    <script>
+        function loadTableData(tableName) {
+            fetch(`/api/AdminApi/get${capitalize(tableName)}`)
+                .then(response => response.json())
+                .then(data => {
+                    let tableHtml = `<h3>${tableName.charAt(0).toUpperCase() + tableName.slice(1)} Tablosu</h3>`;
+                    tableHtml += "<table border='1'><tr>";
+
+                    // Header
+                    if (data.columns) {
+                        data.columns.forEach(column => {
+                            tableHtml += `<th>${column}</th>`;
+                        });
+                        tableHtml += "</tr>";
+                    }
+
+                    // Data Rows
+                    data.rows.forEach(row => {
+                        tableHtml += "<tr>";
+                        row.forEach(cell => {
+                            tableHtml += `<td>${cell}</td>`;
+                        });
+                        tableHtml += "</tr>";
+                    });
+
+                    tableHtml += "</table>";
+                    document.getElementById('tableData').innerHTML = tableHtml;
+                });
+        }
+
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+
+        // Veritabanına yeni bir eleman eklemek için form veya button ekleyebilirsiniz
+        function addEmployee(employeeData) {
+            fetch('/api/AdminApi/addEmployee', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(employeeData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Employee added:', data);
+                });
+        }
+
+        // Veritabanındaki bir elemanı güncellemek için
+        function updateEmployee(id, employeeData) {
+            fetch(`/api/AdminApi/updateEmployee/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(employeeData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Employee updated:', data);
+                });
+        }
+
+        // Veritabanındaki bir elemanı silmek için
+        function deleteEmployee(id) {
+            fetch(`/api/AdminApi/deleteEmployee/${id}`, {
+                method: 'DELETE'
+            })
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Employee deleted');
+                    }
+                });
+        }
+    </script>
+}
