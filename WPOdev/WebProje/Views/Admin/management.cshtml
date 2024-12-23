@@ -7,88 +7,228 @@
 <div>
     <h3>Veritabanı Tabloları</h3>
     <ul id="tableList">
-        <li><a href="#" onclick="loadTableData('employees')">Employees</a></li>
-        <li><a href="#" onclick="loadTableData('services')">Services</a></li>
+        <li><a href="#" onclick="loadTableData('Employees')">Employees</a></li>
+        <li><a href="#" onclick="loadTableData('Services')">Services</a></li>
+        <li><a href="#" onclick="loadTableData('Users')">Users</a></li>
+        <li><a href="#" onclick="loadTableData('Appointments')">Appointments</a></li>
     </ul>
 </div>
 
 <div id="tableData"></div>
 
+<div id="crudActions" style="margin-top: 20px; display: none;">
+    <h3>CRUD İşlemleri</h3>
+    <form id="crudForm">
+        <div id="formFields"></div>
+        <button type="button" onclick="submitForm()">Kaydet</button>
+    </form>
+    <button type="button" onclick="deleteRecord()">Sil</button>
+</div>
+
 @section Scripts {
     <script>
+        let selectedTable = null;
+        let selectedRecordId = null;
+
         function loadTableData(tableName) {
-            fetch(`/api/AdminApi/get${capitalize(tableName)}`)
+            selectedTable = tableName;
+
+            fetch(`/api/admin/get${capitalize(tableName)}`)
                 .then(response => response.json())
                 .then(data => {
-                    let tableHtml = `<h3>${tableName.charAt(0).toUpperCase() + tableName.slice(1)} Tablosu</h3>`;
-                    tableHtml += "<table border='1'><tr>";
+                    console.log("API Yanıtı:", data);
 
-                    // Header
-                    if (data.columns) {
-                        data.columns.forEach(column => {
+                    if (Array.isArray(data) && data.length > 0) {
+                        // İlk nesnenin anahtarları sütun başlıkları olarak alınır
+                        const columns = Object.keys(data[0]);
+
+                        // Satır verilerini doğrudan alırız
+                        const rows = data.map(item => Object.values(item));
+
+                        // Tablo oluşturma işlemi
+                        let tableHtml = `<h3>${tableName.charAt(0).toUpperCase() + tableName.slice(1)} Tablosu</h3>`;
+                        tableHtml += "<table border='1'><tr>";
+
+                        // Başlıklar
+                        columns.forEach(column => {
                             tableHtml += `<th>${column}</th>`;
                         });
-                        tableHtml += "</tr>";
+                        tableHtml += "<th>Actions</th></tr>";
+
+                        // Veriler
+                        rows.forEach((row, index) => {
+                            tableHtml += "<tr>";
+                            row.forEach(cell => {
+                                tableHtml += `<td>${cell}</td>`;
+                            });
+                            tableHtml += `<td><button onclick="editRecord(${index}, ${row[0]})">Edit</button></td>`;
+                            tableHtml += "</tr>";
+                        });
+
+                        tableHtml += "</table>";
+
+                        // "Yeni Eleman Ekle" butonunu ekleyelim
+                        tableHtml += `<button onclick="showAddForm('${tableName}')">Yeni Eleman Ekle</button>`;
+
+                        document.getElementById("tableData").innerHTML = tableHtml;
+                        document.getElementById("crudActions").style.display = "none";
+                    } else {
+                        console.error("Veri formatı hatalı:", data);
+                        document.getElementById("tableData").innerHTML = "<p>Veri yüklenemedi. Lütfen tekrar deneyin.</p>";
+                    }
+                })
+                .catch(error => console.error("Hata:", error));
+        }
+
+
+
+
+        function editRecord(index, id) {
+            selectedRecordId = id;
+            fetch(`/api/admin/get${capitalize(selectedTable)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (!data || data.length === 0) {
+                        console.error("Veri formatı hatalı:", data);
+                        return;
                     }
 
-                    // Data Rows
-                    data.rows.forEach(row => {
-                        tableHtml += "<tr>";
-                        row.forEach(cell => {
-                            tableHtml += `<td>${cell}</td>`;
-                        });
-                        tableHtml += "</tr>";
+                    const record = data[index]; // Direkt olarak index ile kaydı alıyoruz
+                    const columns = Object.keys(record); // Sütun adlarını alıyoruz
+                    let formHtml = "";
+
+                    columns.forEach((column, i) => {
+                        formHtml += `
+                            <div>
+                                <label>${column}:</label>
+                                <input type="text" id="field${i}" value="${record[column]}" ${i === 0 ? "readonly" : ""}>
+                            </div>
+                        `;
                     });
 
-                    tableHtml += "</table>";
-                    document.getElementById('tableData').innerHTML = tableHtml;
-                });
+                    document.getElementById('formFields').innerHTML = formHtml;
+                    document.getElementById('crudActions').style.display = "block";
+                })
+                .catch(error => console.error("Hata:", error));
         }
 
-        function capitalize(str) {
-            return str.charAt(0).toUpperCase() + str.slice(1);
-        }
 
-        // Veritabanına yeni bir eleman eklemek için form veya button ekleyebilirsiniz
-        function addEmployee(employeeData) {
-            fetch('/api/AdminApi/addEmployee', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(employeeData)
+
+
+
+        function submitForm() {
+            const formFields = document.querySelectorAll("#crudForm input");
+            const formData = {};
+
+            formFields.forEach(field => {
+                formData[field.id.replace('field', '')] = field.value;
+            });
+
+            const method = selectedRecordId ? 'PUT' : 'POST';
+            const url = selectedRecordId
+                ? `/api/admin/update${capitalize(selectedTable)}/${selectedRecordId}`
+                : `/api/admin/add${capitalize(selectedTable)}`;
+
+            fetch(url, {
+                method: method,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
             })
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Employee added:', data);
-                });
+                    alert(`${selectedTable} başarıyla ${selectedRecordId ? 'güncellendi' : 'eklendi'}.`);
+                    loadTableData(selectedTable);
+                })
+                .catch(error => console.error("Hata:", error));
         }
 
-        // Veritabanındaki bir elemanı güncellemek için
-        function updateEmployee(id, employeeData) {
-            fetch(`/api/AdminApi/updateEmployee/${id}`, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(employeeData)
-            })
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Employee updated:', data);
-                });
-        }
 
-        // Veritabanındaki bir elemanı silmek için
-        function deleteEmployee(id) {
-            fetch(`/api/AdminApi/deleteEmployee/${id}`, {
+        function deleteRecord() {
+            if (!selectedRecordId) {
+                alert("Lütfen silmek istediğiniz bir kayıt seçin.");
+                return;
+            }
+
+            if (!confirm("Bu kaydı silmek istediğinize emin misiniz?")) return;
+
+            fetch(`/api/admin/delete${capitalize(selectedTable)}/${selectedRecordId}`, {
                 method: 'DELETE'
             })
                 .then(response => {
                     if (response.ok) {
-                        console.log('Employee deleted');
+                        alert(`${selectedTable} başarıyla silindi.`);
+                        loadTableData(selectedTable);
+                    } else {
+                        alert("Silme işlemi başarısız oldu.");
                     }
+                })
+                .catch(error => {
+                    console.error("Hata:", error);
+                    alert("Bir hata oluştu. Lütfen tekrar deneyin.");
                 });
+        }
+
+        function showAddForm(tableName) {
+            fetch(`/api/admin/get${capitalize(tableName)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (!data || data.length === 0) {
+                        console.error("Veri formatı hatalı:", data);
+                        return;
+                    }
+
+                    const columns = Object.keys(data[0]); // Sütun adlarını alıyoruz
+                    let formHtml = `<h3>${tableName.charAt(0).toUpperCase() + tableName.slice(1)} Tablosu - Yeni Eleman Ekle</h3>`;
+                    formHtml += `<form id="addForm">`;
+
+                    // Her sütun için bir input alanı oluşturuyoruz
+                    columns.forEach(column => {
+                        formHtml += `
+                            <div>
+                                <label>${column}:</label>
+                                <input type="text" id="${column}" name="${column}" required>
+                            </div>
+                        `;
+                    });
+
+                    formHtml += `<button type="button" onclick="submitAddForm('${tableName}')">Kaydet</button>`;
+                    formHtml += `</form>`;
+
+                    document.getElementById("crudActions").innerHTML = formHtml;
+                    document.getElementById("crudActions").style.display = "block";
+                })
+                .catch(error => console.error("Hata:", error));
+        }
+
+        function submitAddForm(tableName) {
+            const form = document.getElementById("addForm");
+            const formData = new FormData(form);
+            const data = {};
+
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            const url = `/api/admin/add${capitalize(tableName)}`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert(`${tableName} tablosuna yeni eleman eklendi.`);
+                    loadTableData(tableName); // Tabloyu yeniden yükle
+                    document.getElementById("crudActions").style.display = "none"; // Formu gizle
+                })
+                .catch(error => console.error("Hata:", error));
+        }
+
+
+
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
         }
     </script>
 }

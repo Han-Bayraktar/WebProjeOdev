@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TQwUfhlejUlAf5r/RRBz1F7ivGMSbk9IX1KO7PtUAfM=",
+  "Hash": "BXdM47+GX/iEkRj6ilBzh7HykRc34mGt9IzpRNX4DoE=",
   "Source": "WebProje",
   "BasePath": "_content/WebProje",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-30at7hh59b.gz",
+      "Identity": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-d9ekgmxhrv.gz",
       "SourceId": "WebProje",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebProje",
-      "RelativePath": "css/site#[.{fingerprint=30at7hh59b}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=d9ekgmxhrv}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "oi4txjeemd",
-      "Integrity": "IAnhiid/TqVybudstLBTjsOnt2n+/l0dBO+6BB/bCWw=",
+      "Fingerprint": "nd1zrle7mi",
+      "Integrity": "uwCRoZOlnDBJguLRbwmp+zmDF8SDRN14c6ogpYoVhk0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css"
@@ -1480,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "30at7hh59b",
-      "Integrity": "HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE=",
+      "Fingerprint": "d9ekgmxhrv",
+      "Integrity": "zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -3278,13 +3278,13 @@
       ]
     },
     {
-      "Route": "css/site.30at7hh59b.css",
-      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-30at7hh59b.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-d9ekgmxhrv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000496031746"
+          "Quality": "0.000471031559"
         }
       ],
       "ResponseHeaders": [
@@ -3294,19 +3294,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2015"
+          "Value": "2122"
         },
         {
           "Name": "ETag",
-          "Value": "\"IAnhiid/TqVybudstLBTjsOnt2n+/l0dBO+6BB/bCWw=\""
+          "Value": "\"uwCRoZOlnDBJguLRbwmp+zmDF8SDRN14c6ogpYoVhk0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 16:02:06 GMT"
+          "Value": "Mon, 23 Dec 2024 17:30:09 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3322,26 +3322,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE=\""
+          "Value": "W/\"zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "30at7hh59b"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE="
+          "Value": "sha256-zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8="
         }
       ]
     },
     {
-      "Route": "css/site.30at7hh59b.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3351,7 +3343,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7983"
+          "Value": "8180"
         },
         {
           "Name": "Content-Type",
@@ -3359,11 +3351,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE=\""
+          "Value": "\"zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 16:02:06 GMT"
+          "Value": "Mon, 23 Dec 2024 17:30:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-d9ekgmxhrv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uwCRoZOlnDBJguLRbwmp+zmDF8SDRN14c6ogpYoVhk0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 17:30:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uwCRoZOlnDBJguLRbwmp+zmDF8SDRN14c6ogpYoVhk0="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.d9ekgmxhrv.css",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-d9ekgmxhrv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000471031559"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2122"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uwCRoZOlnDBJguLRbwmp+zmDF8SDRN14c6ogpYoVhk0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 17:30:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d9ekgmxhrv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.d9ekgmxhrv.css",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8180"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 17:30:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3373,7 +3510,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "30at7hh59b"
+          "Value": "d9ekgmxhrv"
         },
         {
           "Name": "label",
@@ -3381,13 +3518,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE="
+          "Value": "sha256-zwKTf6hU/K27hcuQtoGbAfYjBHpsGFnKxZGUsN6uMm8="
         }
       ]
     },
     {
-      "Route": "css/site.30at7hh59b.css.gz",
-      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-30at7hh59b.gz",
+      "Route": "css/site.d9ekgmxhrv.css.gz",
+      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-d9ekgmxhrv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3396,7 +3533,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2015"
+          "Value": "2122"
         },
         {
           "Name": "Content-Type",
@@ -3404,11 +3541,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IAnhiid/TqVybudstLBTjsOnt2n+/l0dBO+6BB/bCWw=\""
+          "Value": "\"uwCRoZOlnDBJguLRbwmp+zmDF8SDRN14c6ogpYoVhk0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 16:02:06 GMT"
+          "Value": "Mon, 23 Dec 2024 17:30:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3426,7 +3563,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "30at7hh59b"
+          "Value": "d9ekgmxhrv"
         },
         {
           "Name": "label",
@@ -3434,144 +3571,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IAnhiid/TqVybudstLBTjsOnt2n+/l0dBO+6BB/bCWw="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-30at7hh59b.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000496031746"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2015"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IAnhiid/TqVybudstLBTjsOnt2n+/l0dBO+6BB/bCWw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 16:02:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7983"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 16:02:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HY0GseBEiDPA4vUfxF7/DeabYB967gr2waEP7buY+BE="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\Debug\\net9.0\\compressed\\4pta1yyqfm-30at7hh59b.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2015"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IAnhiid/TqVybudstLBTjsOnt2n+/l0dBO+6BB/bCWw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 16:02:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IAnhiid/TqVybudstLBTjsOnt2n+/l0dBO+6BB/bCWw="
+          "Value": "sha256-uwCRoZOlnDBJguLRbwmp+zmDF8SDRN14c6ogpYoVhk0="
         }
       ]
     },

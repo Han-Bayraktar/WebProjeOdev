@@ -29,7 +29,34 @@ public class PostgreSqlDbContext : DbContext
             Role = "admin"
         });
 
-        // Diğer tablolar için gerekli yapılandırmalar burada yapılabilir
+        // Employee tablosuna varsayılan bir çalışan ekliyoruz
+        modelBuilder.Entity<Employee>().HasData(new Employee
+        {
+            Id = 1,
+            Name = "Mustafa Yılmaz",
+            Specialty = "Haircut",
+            WorkingHours = "9 am-5 pm"
+        });
+
+        // Service tablosuna varsayılan bir servis ekliyoruz
+        modelBuilder.Entity<Service>().HasData(new Service
+        {
+            Id = 1,
+            Name = "Haircut",
+            Duration = 30,
+            Price = 50
+        });
+
+        // Appointment tablosuna varsayılan bir randevu ekliyoruz
+        modelBuilder.Entity<Appointment>().HasData(new Appointment
+        {
+            Id = 1,
+            AppointmentTime = new DateTime(2024, 12, 30, 9, 0, 0, DateTimeKind.Utc),
+            ServiceId = 1,
+            EmployeeId = 1,
+            UserId = 1,
+            Status = false
+        });
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

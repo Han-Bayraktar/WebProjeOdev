@@ -9,18 +9,19 @@ html {
 }
 /*--------------------Home--------------------*/
 #Home {
-    height: 100vh;
+    width: 100%; /* Container'ýn geniþliði tamamen kapsamasý için */
+    height: 100%; /* Container'ýn yüksekliði tamamen kapsamasý için */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Resimler/login.jpeg") no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Resimler/login.jpeg") no-repeat center center;
+    background-attachment: fixed; /* Parallax efekt için sabit arka plan */
+    background-size: cover; /* Arka planýn container'ý kaplamasýný saðlar */
+    background-position: center; /* Resmi merkezler */
     box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
+
 
 #logo {
     width: 100px;
