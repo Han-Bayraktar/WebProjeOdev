@@ -39,23 +39,17 @@
                     console.log("API Yanıtı:", data);
 
                     if (Array.isArray(data) && data.length > 0) {
-                        // İlk nesnenin anahtarları sütun başlıkları olarak alınır
                         const columns = Object.keys(data[0]);
-
-                        // Satır verilerini doğrudan alırız
                         const rows = data.map(item => Object.values(item));
 
-                        // Tablo oluşturma işlemi
-                        let tableHtml = `<h3>${tableName.charAt(0).toUpperCase() + tableName.slice(1)} Tablosu</h3>`;
+                        let tableHtml = `<h3>${capitalize(tableName)} Tablosu</h3>`;
                         tableHtml += "<table border='1'><tr>";
 
-                        // Başlıklar
                         columns.forEach(column => {
                             tableHtml += `<th>${column}</th>`;
                         });
                         tableHtml += "<th>Actions</th></tr>";
 
-                        // Veriler
                         rows.forEach((row, index) => {
                             tableHtml += "<tr>";
                             row.forEach(cell => {
@@ -66,8 +60,6 @@
                         });
 
                         tableHtml += "</table>";
-
-                        // "Yeni Eleman Ekle" butonunu ekleyelim
                         tableHtml += `<button onclick="showAddForm('${tableName}')">Yeni Eleman Ekle</button>`;
 
                         document.getElementById("tableData").innerHTML = tableHtml;
@@ -80,34 +72,49 @@
                 .catch(error => console.error("Hata:", error));
         }
 
-
-
-
         function editRecord(index, id) {
             selectedRecordId = id;
+
+            const crudActionsDiv = document.getElementById("crudActions");
+
+            // CRUD işlemleri div'ini temizle
+            crudActionsDiv.innerHTML = "";
+
             fetch(`/api/admin/get${capitalize(selectedTable)}`)
                 .then(response => response.json())
                 .then(data => {
                     if (!data || data.length === 0) {
-                        console.error("Veri formatı hatalı:", data);
+                        console.error("Veri formatı hatalı veya boş:", data);
                         return;
                     }
 
-                    const record = data[index]; // Direkt olarak index ile kaydı alıyoruz
-                    const columns = Object.keys(record); // Sütun adlarını alıyoruz
-                    let formHtml = "";
+                    // Kaydı ID'ye göre bul
+                    const record = data.find(item => item.id === id);
+                    if (!record) {
+                        console.error("Kayıt bulunamadı:", id);
+                        return;
+                    }
 
-                    columns.forEach((column, i) => {
+                    let formHtml = `<h3>${selectedTable.charAt(0).toUpperCase() + selectedTable.slice(1)} Düzenleme</h3>`;
+                    formHtml += `<form id="crudForm">`;
+
+                    Object.keys(record).forEach(column => {
                         formHtml += `
                             <div>
                                 <label>${column}:</label>
-                                <input type="text" id="field${i}" value="${record[column]}" ${i === 0 ? "readonly" : ""}>
+                                <input type="text" id="field_${column}" value="${record[column]}" ${column === "id" ? "readonly" : ""}>
                             </div>
                         `;
                     });
 
-                    document.getElementById('formFields').innerHTML = formHtml;
-                    document.getElementById('crudActions').style.display = "block";
+                    formHtml += `
+                        <button type="button" onclick="submitForm()">Kaydet</button>
+                        <button type="button" style="margin-left: 10px; color: red;" onclick="deleteRecord()">Sil</button>
+                    `;
+                    formHtml += `</form>`;
+
+                    crudActionsDiv.innerHTML = formHtml;
+                    crudActionsDiv.style.display = "block"; // Görünür yap
                 })
                 .catch(error => console.error("Hata:", error));
         }
@@ -121,7 +128,8 @@
             const formData = {};
 
             formFields.forEach(field => {
-                formData[field.id.replace('field', '')] = field.value;
+                const fieldName = field.id.replace("field_", "");
+                formData[fieldName] = field.value;
             });
 
             const method = selectedRecordId ? 'PUT' : 'POST';
@@ -134,14 +142,19 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
             })
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("API hatası");
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     alert(`${selectedTable} başarıyla ${selectedRecordId ? 'güncellendi' : 'eklendi'}.`);
                     loadTableData(selectedTable);
+                    document.getElementById("crudActions").style.display = "none";
                 })
                 .catch(error => console.error("Hata:", error));
         }
-
 
         function deleteRecord() {
             if (!selectedRecordId) {
@@ -162,10 +175,7 @@
                         alert("Silme işlemi başarısız oldu.");
                     }
                 })
-                .catch(error => {
-                    console.error("Hata:", error);
-                    alert("Bir hata oluştu. Lütfen tekrar deneyin.");
-                });
+                .catch(error => console.error("Hata:", error));
         }
 
         function showAddForm(tableName) {
@@ -185,7 +195,7 @@
                     columns.forEach(column => {
                         formHtml += `
                             <div>
-                                <label>${column}:</label>
+                                <label for="${column}">${column}:</label>
                                 <input type="text" id="${column}" name="${column}" required>
                             </div>
                         `;
@@ -195,10 +205,11 @@
                     formHtml += `</form>`;
 
                     document.getElementById("crudActions").innerHTML = formHtml;
-                    document.getElementById("crudActions").style.display = "block";
+                    document.getElementById("crudActions").style.display = "block"; // Formu görünür yap
                 })
                 .catch(error => console.error("Hata:", error));
         }
+
 
         function submitAddForm(tableName) {
             const form = document.getElementById("addForm");
@@ -224,7 +235,6 @@
                 })
                 .catch(error => console.error("Hata:", error));
         }
-
 
 
         function capitalize(str) {
