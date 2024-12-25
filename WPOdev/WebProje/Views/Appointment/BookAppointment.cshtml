@@ -1,0 +1,158 @@
+﻿@model List<WebProje.Models.Service>
+
+@{
+    ViewData["Title"] = "Randevu Alma";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h3>Servis Seçin</h3>
+    <select id="serviceSelect" onchange="loadAppointments()">
+        <option value="">Servis Seçin</option>
+        @foreach (var service in Model)
+        {
+            <option value="@service.Id">@service.Name</option>
+        }
+    </select>
+</div>
+
+<div id="appointmentsContainer">
+    <h3>Randevular</h3>
+    <table id="appointmentsTable">
+        <thead>
+            <tr>
+                <th>Gün</th>
+                <th>Tarih</th>
+                <th>Randevu Saatleri</th>
+            </tr>
+        </thead>
+        <tbody id="appointments"></tbody>
+    </table>
+</div>
+
+@section Styles {
+    <style>
+        #appointmentsTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #appointmentsTable th, #appointmentsTable td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #appointmentsTable th {
+            background-color: #f2f2f2;
+        }
+
+        #appointmentsTable td button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #appointmentsTable td button:hover {
+            opacity: 0.8;
+        }
+
+        #appointmentsTable td button:disabled {
+            cursor: not-allowed;
+            background-color: gray;
+        }
+
+        h2, h3 {
+            font-family: 'Arial', sans-serif;
+        }
+
+        select {
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        select:focus {
+            border-color: #5c9e6e;
+            outline: none;
+        }
+
+        #appointmentsContainer {
+            margin-top: 30px;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        // Seçilen servise ait randevuları yükle
+        function loadAppointments() {
+            const serviceId = document.getElementById('serviceSelect').value;
+            if (!serviceId) return;
+
+            fetch(`/Appointment/GetAvailableAppointments?serviceId=${serviceId}`)
+                .then(response => response.json())
+                .then(appointments => {
+                    const appointmentsContainer = document.getElementById('appointments');
+                    appointmentsContainer.innerHTML = ''; // Mevcut içeriği temizle
+
+                    const daysOfWeek = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+                    const date = new Date();
+                    let appointmentsHtml = '';
+
+                    // Günlere göre randevuları grupla
+                    daysOfWeek.forEach((day, index) => {
+                        const dayAppointments = appointments.filter(app => new Date(app.appointmentTime).getDay() === index);
+
+                        if (dayAppointments.length > 0) {
+                            const dayDate = new Date(dayAppointments[0].appointmentTime);
+                            const formattedDate = `${dayDate.getDate()}.${dayDate.getMonth() + 1}.${dayDate.getFullYear()}`;
+
+                            appointmentsHtml += `<tr><td>${day}</td><td>${formattedDate}</td><td>`;
+
+                            dayAppointments.forEach(app => {
+                                const appointmentTime = new Date(app.appointmentTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                                const buttonStyle = app.status ? 'background-color: black; color: white; cursor: not-allowed;' : 'background-color: green; color: white;';
+
+                                appointmentsHtml += `
+                                            <button
+                                                style="${buttonStyle}"
+                                                ${app.status ? 'disabled' : ''}
+                                                onclick="bookAppointment(${app.id})">
+                                                ${appointmentTime}
+                                            </button>
+                                        `;
+                            });
+
+                            appointmentsHtml += '</td></tr>';
+                        }
+                    });
+
+                    appointmentsContainer.innerHTML = appointmentsHtml;
+                });
+        }
+
+        // Randevu al
+        function bookAppointment(appointmentId) {
+            fetch(`/Appointment/BookAppointment?appointmentId=${appointmentId}`, {
+                method: 'POST'
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Randevunuz başarıyla alındı.');
+                        loadAppointments(); // Randevu alındıktan sonra randevuları güncelle
+                    } else {
+                        alert('Randevu alma işlemi başarısız oldu.');
+                    }
+                });
+        }
+    </script>
+}
