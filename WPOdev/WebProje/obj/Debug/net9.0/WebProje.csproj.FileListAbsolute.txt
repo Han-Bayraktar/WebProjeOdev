@@ -850,7 +850,7 @@ D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\WebProje.genruntimeconfig.cache
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\ref\WebProje.dll
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-heccnwe7ra.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-heccnwe7ra.gz
-D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-30at7hh59b.gz
-D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-qnnx9e3i7f.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-qnnx9e3i7f.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-d9ekgmxhrv.gz
+D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-mjh7e5mouw.gz
+D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-y94qyiv78b.gz

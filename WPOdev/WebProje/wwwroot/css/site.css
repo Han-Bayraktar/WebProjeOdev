@@ -1,48 +1,77 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
+
+body {
+    width: 100%;
+}
+
 /*--------------------Home--------------------*/
 #Home {
-    width: 100%; /* Container'ýn geniþliði tamamen kapsamasý için */
-    height: 100%; /* Container'ýn yüksekliði tamamen kapsamasý için */
+     height: 100vh;
+     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Resimler/login.jpeg") no-repeat center center;
-    background-attachment: fixed; /* Parallax efekt için sabit arka plan */
-    background-size: cover; /* Arka planýn container'ý kaplamasýný saðlar */
-    background-position: center; /* Resmi merkezler */
-    box-shadow: 3px 3px 5px 6px #ccc;
+    
+    background-size: cover;
+     background: 
+        url("/Resimler/login.jpeg") no-repeat center center fixed;
 }
 
+@media (max-width: 768px) {
+    #Home {
+        background-size: cover; /* Küçük ekranlar için düzenleme */
+    }
+}
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo boyutunu büyütme */
 #logo {
-    width: 100px;
-    margin: 1.03vh;
+    width: 250px; /* Geniþlik artýrýldý */
+    height: auto; /* Yükseklik orantýlý olarak ayarlanýr */
+    margin: 2vh; /* Daha dengeli margin */
+}
+
+@media (min-width: 768px) {
+    #logo {
+        width: 30em; /* Büyük ekranlarda daha büyük logo */
+    }
 }
 
 #Home > span {
     margin-bottom: 19.09vh;
 }
+
 /*--------------------About--------------------*/
 #About {
     justify-content: space-evenly;
     align-items: center;
 }
-
+    #About h2 {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        font-weight: bold;
+        font-size: 4rem;
+    }
 #Crew {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     text-align: center;
-    grid-gap: 5vw;
+    /*grid-gap: 5vw;*/
 }
 
 .gallery {
@@ -69,37 +98,59 @@ html {
     text-align: center;
     justify-items: center;
     align-items: center;
-    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    /*width: 80%;*/
 }
 
     #About > span p {
         font-style: italic;
         margin: 1.5rem 0rem 0.625rem 0rem;
+        margin-bottom: 2rem;
+        font-weight:600;
+        font-size: 2rem;
     }
-
-#Crew p {
-    font-size: 1.75rem;
-}
+        #About > span p > b {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 4rem;
+            font-style: normal;
+        }
+        #Crew p {
+    font-size: 3rem;
+        }
 
 .grid-item-c {
     border-radius: 6px;
-    width: 22.5vw;
-    height: 27.5vw;
-    box-shadow: 1px 1px 2px 3px #ccc;
+    width: 900px;
+    height: 600px;
+    margin-top:2rem;
+    margin-bottom:2rem;
+   /* box-shadow: 1px 1px 2px 3px #ccc;*/
 }
 /*--------------------Gallery--------------------*/
 #Gallery {
     justify-content: space-evenly;
     align-items: center;
 }
+    #Gallery h2 {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        font-weight: bold;
+        font-size: 4rem;
+    }
 
 #Gallery-Content {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-items: space-evenly;
     align-content: space-evenly;
     grid-gap: 5vw;
     height: auto;
+}
+#Gallery-Content p {
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 .grid-item-g {
@@ -112,7 +163,7 @@ html {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 * {
@@ -141,19 +192,21 @@ p {
     font-size: 1.125rem;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    padding: 5.3125rem 5.3125rem 5.3125rem 5.3125rem;
-    width: 100%;
+
+#Contact h2 {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    font-size: 4rem;
 }
+
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+    color: var(--bs-secondary-color);
+    text-align: end;
 }
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+    text-align: start;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -173,28 +226,8 @@ p {
     p {
         font-size: 1rem;
     }
+    
 
-    .container {
-        padding: 7.5em 3em 3em 3em;
-    }
-
-    /*----------Home----------*/
-    #logo {
-        width: 20em;
-    }
-
-    #Home {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Resimler/login.jpeg");
-    }
-
-        #Home > span {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #Home button {
-            margin: 2.5px;
-        }
 
     /*----------About----------*/
     #About > span {
@@ -230,6 +263,7 @@ p {
         width: 45vw;
         height: 45vw;
     }
+ 
 
     /*----------Contact----------*/
     #Contact > h2 {
@@ -252,14 +286,15 @@ p {
 
     @media only screen and (max-width: 900px) {
         /*----------HTMLPage----------*/
-        .container {
+        /*.container {
             padding: 3em 3em 3em 3em;
-        }
+        }*/
 
         /*----------About----------*/
         .grid-item-c {
             width: 16.5em;
             height: 20.5em;
+
         }
 
         /*----------Gallery----------*/
@@ -286,7 +321,7 @@ p {
 }
 
 .flickity-slider {
-    position: absolute;
+    position: center;
     width: 100%;
     height: 100%;
 }
