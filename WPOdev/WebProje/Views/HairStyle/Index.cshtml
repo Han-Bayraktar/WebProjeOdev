@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "_Layout";
+    var response = ViewBag.ApiResponse as ApiResponse;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saç Stili Düzenleyici</title>
+    <link rel="stylesheet" href="/css/HairStyle.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Saç Stili Düzenleyici</h2>
+
+        @if (!string.IsNullOrEmpty(ViewBag.Error))
+        {
+            <p class="error-message">@ViewBag.Error</p>
+        }
+
+        <form asp-action="Index" asp-controller="HairStyle" method="post" enctype="multipart/form-data">
+            <div class="drag-drop">
+                <span>Görsel yüklemek için tıklayın veya sürükleyip bırakın (Maksimum: 5MB)</span>
+                <input type="file" id="imageFile" name="imageFile" accept="image/*" required />
+            </div>
+
+            <label for="hairType">Saç Tipi Seçin:</label>
+            <select id="hairType" name="hairType" required>
+                <option value="101">Bangs (Kakül)</option>
+                <option value="201">Long hair (Uzun saç)</option>
+                <option value="301">Bangs with long hair (Kakül ve uzun saç)</option>
+                <option value="401">Medium hair increase (Orta saç artışı)</option>
+                <option value="402">Light hair increase (Hafif saç artışı)</option>
+                <option value="403">Heavy hair increase (Yoğun saç artışı)</option>
+                <option value="502">Light curling (Hafif bukle)</option>
+                <option value="503">Heavy curling (Yoğun bukle)</option>
+                <option value="603">Short hair (Kısa saç)</option>
+                <option value="801">Blonde (Sarı saç)</option>
+                <option value="901">Straight hair (Düz saç)</option>
+                <option value="1001">Oil-free hair (Yağsız saç)</option>
+                <option value="1101">Hairline fill (Saç çizgisi dolgusu)</option>
+                <option value="1201">Smooth hair (Düz saç)</option>
+                <option value="1301">Fill hair gap (Saç boşluğu doldurma)</option>
+            </select>
+
+            <button type="submit">İşlemi Uygula</button>
+        </form>
+
+        @if (response != null)
+        {
+            @if (!string.IsNullOrEmpty(ViewBag.ImageData))
+            {
+                <h3>Sonuç Görsel:</h3>
+                <img src="@ViewBag.ImageData" alt="İşlenmiş Görsel" />
+            }
+        }
+    </div>
+</body>
+</html>

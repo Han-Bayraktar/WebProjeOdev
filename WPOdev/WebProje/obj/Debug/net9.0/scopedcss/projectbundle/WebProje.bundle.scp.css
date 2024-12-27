@@ -12,6 +12,11 @@ a[b-wp3nozgae1] {
   color: #0077cc;
 }
 
+main[b-wp3nozgae1] {
+    flex: 1; /* Ana içerik alanını doldur */
+    margin-bottom:50px;
+}
+
 .btn-primary[b-wp3nozgae1] {
   color: #fff;
   background-color: #1b6ec2;
@@ -40,10 +45,19 @@ button.accept-policy[b-wp3nozgae1] {
   line-height: inherit;
 }
 
-.footer[b-wp3nozgae1] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+footer[b-wp3nozgae1] {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #f8f9fa; /* Footer arka plan rengi */
 }
+@media (max-width: 992px) {
+    body[b-wp3nozgae1] {
+        padding-top: 150px; /* Mobil cihazlar için daha fazla boşluk */
+    }
+}
+

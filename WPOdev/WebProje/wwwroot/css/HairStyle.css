@@ -1,0 +1,135 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight:bold;
+    color: #343a40;
+    margin-bottom:  1.5rem;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-top: 70px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+label{
+    margin-bottom: 1rem;
+}
+
+.drag-drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #5c9e6e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f1f3f4;
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    position: relative;
+}
+
+    .drag-drop:hover {
+        background-color: #e9ecef;
+    }
+
+    .drag-drop input[type="file"] {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+    select:focus {
+        border-color: #5c9e6e;
+        outline: none;
+    }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #5c9e6e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+img {
+    max-width: 100%;
+    max-height: 60vh; /* Limits image height to 60% of viewport height */
+    height: auto;
+    object-fit: contain; /* Maintains aspect ratio */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    .drag-drop {
+        height: 120px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
