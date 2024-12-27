@@ -1,5 +1,7 @@
 ﻿@model List<WebProje.Models.Service>
 
+@using System.Security.Claims // Bu satırı ekleyin
+
 @{
     ViewData["Title"] = "Randevu Alma";
 }
@@ -88,6 +90,21 @@
         #appointmentsContainer {
             margin-top: 30px;
         }
+
+        .appointment-button-available {
+            background-color: green;
+            color: white;
+        }
+
+        .appointment-button-cancelled {
+            background-color: red;
+            color: white;
+        }
+
+        .appointment-button-disabled {
+            background-color: gray;
+            color: white;
+        }
     </style>
 }
 
@@ -120,16 +137,21 @@
 
                             dayAppointments.forEach(app => {
                                 const appointmentTime = new Date(app.appointmentTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-                                const buttonStyle = app.status ? 'background-color: black; color: white; cursor: not-allowed;' : 'background-color: green; color: white;';
+
+                                // Status true olduğunda buton gri renkte olacak ve disabled olacak
+                                const buttonStyle = app.status ? 'background-color: gray; color: white; cursor: not-allowed;' : 'background-color: green; color: white;';
+                                const isDisabled = app.status ? 'disabled' : '';
+                                const isUserAppointment = app.userId === 1; // Giriş yapan kullanıcı ID'si ile kontrol et
 
                                 appointmentsHtml += `
-                                            <button
-                                                style="${buttonStyle}"
-                                                ${app.status ? 'disabled' : ''}
-                                                onclick="bookAppointment(${app.id})">
-                                                ${appointmentTime}
-                                            </button>
-                                        `;
+                                    <button
+                                        style="${buttonStyle}"
+                                        ${isDisabled}
+                                        ${isUserAppointment ? '' : 'disabled'}
+                                        onclick="bookAppointment(${app.id}, ${app.userId})">
+                                        ${appointmentTime}
+                                    </button>
+                                `;
                             });
 
                             appointmentsHtml += '</td></tr>';
@@ -140,19 +162,21 @@
                 });
         }
 
-        // Randevu al
-        function bookAppointment(appointmentId) {
-            fetch(`/Appointment/BookAppointment?appointmentId=${appointmentId}`, {
-                method: 'POST'
-            })
+        // Randevu al veya iptal et
+        function bookAppointment(appointmentId, userId) {
+            if (confirm("Randevunuzu iptal etmek istediğinize emin misiniz?")) {
+                fetch(`/Appointment/CancelAppointment?appointmentId=${appointmentId}&userId=${userId}`, {
+                    method: 'POST'
+                })
                 .then(response => {
                     if (response.ok) {
-                        alert('Randevunuz başarıyla alındı.');
-                        loadAppointments(); // Randevu alındıktan sonra randevuları güncelle
+                        alert('Randevunuz başarıyla iptal edildi.');
+                        loadAppointments(); // Randevu iptal edildikten sonra randevuları güncelle
                     } else {
-                        alert('Randevu alma işlemi başarısız oldu.');
+                        alert('Randevu iptal işlemi başarısız oldu.');
                     }
                 });
+            }
         }
     </script>
 }

@@ -180,9 +180,9 @@ namespace WebProje.Controllers
                 .Select(a => new
                 {
                     a.Id,
-                    UserName = a.User.Name,
-                    ServiceName = a.Service.Name,
-                    EmployeeName = a.Employee.Name,
+                    UserId = a.User.Id,
+                    ServiceId = a.Service.Id,
+                    EmployeeId = a.Employee.Id,
                     a.AppointmentTime,
                     a.Status
                 })
@@ -206,14 +206,26 @@ namespace WebProje.Controllers
         [HttpPut("api/admin/updateAppointments/{id}")]
         public IActionResult UpdateAppointment(int id, [FromBody] Appointment appointment)
         {
-            if (appointment == null || id != appointment.Id)
-                return BadRequest("Appointment data is invalid");
+            try
+            {
+                if (appointment == null || id != appointment.Id)
+                    return BadRequest("Appointment data is invalid");
 
-            _context.Appointments.Update(appointment);
-            _context.SaveChanges();
+                var existingAppointment = _context.Appointments.Find(id);
+                if (existingAppointment == null)
+                    return NotFound("Appointment not found");
 
-            return Ok(appointment);
+                _context.Appointments.Update(existingAppointment);
+                _context.SaveChanges();
+
+                return Ok(existingAppointment);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error: {ex.Message}");
+            }
         }
+
 
         [HttpDelete("api/admin/deleteAppointments/{id}")]
         public IActionResult DeleteAppointment(int id)

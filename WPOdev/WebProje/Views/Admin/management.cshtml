@@ -340,48 +340,77 @@
 
             const data = {};
             formData.forEach((value, key) => {
-                data[key.replace('field_', '')] = value; // 'field_' ön ekini kaldır
+                data[key.replace("field_", "")] = value; 
+                if (field === "appointmentTime") {
+                    data[field] = new Date(value).toISOString(); 
+                }
             });
 
+            console.log("Gönderilecek veri:", data); 
+
             if (selectedRecordId) {
-                // Güncelleme işlemi
-                fetch(`/api/admin/update${capitalize(selectedTable)}/${selectedRecordId}`, {
+                const url = `/api/admin/update${capitalize(selectedTable)}/${selectedRecordId}`;
+                console.log("Güncelleme URL'si:", url); 
+
+                fetch(url, {
                     method: "PUT",
                     headers: {
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(data) // JSON formatında veri gönder
+                    body: JSON.stringify(data), 
                 })
-                    .then(response => {
+                    .then((response) => {
+                        console.log("Güncelleme yanıt durumu:", response.status); 
                         if (!response.ok) {
-                            return Promise.reject("Güncelleme başarısız");
+                            return response.text().then((text) => {
+                                console.error("API Hatası:", text); 
+                                throw new Error(`Güncelleme başarısız: ${text}`);
+                            });
                         }
                         return response.json();
                     })
-                    .then(data => {
-                        console.log("Kayıt güncellendi:", data);
+                    .then((updatedData) => {
+                        console.log("Kayıt güncellendi:", updatedData); 
                         loadTableData(selectedTable);
                         document.getElementById("crudActions").style.display = "none";
                     })
-                    .catch(error => console.error("Hata:", error));
+                    .catch((error) => {
+                        console.error("Güncelleme sırasında hata oluştu:", error); 
+                        alert(`Hata oluştu: ${error.message}`);
+                    });
             } else {
-                // Yeni kayıt ekleme
-                fetch(`/api/admin/add${capitalize(selectedTable)}`, {
+                const url = `/api/admin/add${capitalize(selectedTable)}`;
+                console.log("Yeni kayıt URL'si:", url); 
+
+                fetch(url, {
                     method: "POST",
                     headers: {
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(data)
+                    body: JSON.stringify(data),
                 })
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log("Yeni kayıt eklendi:", data);
+                    .then((response) => {
+                        console.log("Kayıt ekleme yanıt durumu:", response.status); 
+                        if (!response.ok) {
+                            return response.text().then((text) => {
+                                console.error("API Hatası:", text);
+                                throw new Error(`Kayıt ekleme başarısız: ${text}`);
+                            });
+                        }
+                        return response.json();
+                    })
+                    .then((newData) => {
+                        console.log("Yeni kayıt eklendi:", newData);
                         loadTableData(selectedTable);
                         document.getElementById("crudActions").style.display = "none";
                     })
-                    .catch(error => console.error("Hata:", error));
+                    .catch((error) => {
+                        console.error("Kayıt ekleme sırasında hata oluştu:", error);
+                        alert(`Hata oluştu: ${error.message}`);
+                    });
             }
         }
+
 
 
 

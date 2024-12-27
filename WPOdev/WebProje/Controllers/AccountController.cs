@@ -38,6 +38,7 @@ namespace WebProje.Controllers
         new Claim(ClaimTypes.Name, existingUser.Name),
         new Claim(ClaimTypes.Email, existingUser.Email),
         new Claim(ClaimTypes.Role, existingUser.Role),
+        new Claim(ClaimTypes.NameIdentifier, existingUser.Id.ToString()) 
     };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
