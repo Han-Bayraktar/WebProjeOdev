@@ -1,89 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\webprog\\WPOdev\\",
+  "WorkspaceRootPath": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\wwwroot\\css\\hairstyle.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\css\\hairstyle.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\hairstyle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\hairstyle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\hairstylecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\hairstylecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\wwwroot\\css\\hairstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\css\\hairstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\wwwroot\\css\\login-register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\css\\login-register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\appointment\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\appointment\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\controllers\\admincont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\admincont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\views\\admin\\management.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\views\\admin\\management.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\admin\\management.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\controllers\\admincont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\admincont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\views\\appointment\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\appointment\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\data\\postgresqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\data\\postgresqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\data\\postgresqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\migrations\\20241223182443_ikincimigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\migrations\\20241223182443_ikincimigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\migrations\\20241223182443_ikincimigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\migrations\\postgresqldbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\migrations\\postgresqldbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\migrations\\postgresqldbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|d:\\webprog\\wpodev\\webproje\\migrations\\20241224233406_dorduncumigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|c:\\users\\han bayraktar\\source\\repos\\webprojeodev\\wpodev\\webproje\\migrations\\20241224233406_dorduncumigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74FDAE10-247A-4D83-B71B-C7FD511FE99C}|WebProje\\WebProje.csproj|solutionrelative:webproje\\migrations\\20241224233406_dorduncumigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -94,49 +66,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HairStyle.css",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\HairStyle.css",
-              "RelativeDocumentMoniker": "WebProje\\wwwroot\\css\\HairStyle.css",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\HairStyle.css*",
-              "RelativeToolTip": "WebProje\\wwwroot\\css\\HairStyle.css*",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAwwGoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-27T22:07:55.831Z",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebProje\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebProje\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T03:24:09.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\HairStyle\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\HairStyle\\Index.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\HairStyle\\Index.cshtml*",
-              "RelativeToolTip": "WebProje\\Views\\HairStyle\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T21:49:43.954Z",
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "WebProje\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "WebProje\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEgAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T17:00:56.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "20241223182443_ikincimigration.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241223182443_ikincimigration.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Migrations\\20241223182443_ikincimigration.cs",
               "RelativeDocumentMoniker": "WebProje\\Migrations\\20241223182443_ikincimigration.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241223182443_ikincimigration.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Migrations\\20241223182443_ikincimigration.cs",
               "RelativeToolTip": "WebProje\\Migrations\\20241223182443_ikincimigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -145,154 +109,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T12:41:49.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "WebProje\\Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-27T22:01:25.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 12,
               "Title": "PostgreSqlDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\PostgreSqlDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Migrations\\PostgreSqlDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "WebProje\\Migrations\\PostgreSqlDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\PostgreSqlDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Migrations\\PostgreSqlDbContextModelSnapshot.cs",
               "RelativeToolTip": "WebProje\\Migrations\\PostgreSqlDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAzwCwAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T18:18:58.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HairStyle.css",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\HairStyle.css",
-              "RelativeDocumentMoniker": "WebProje\\wwwroot\\css\\HairStyle.css",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\HairStyle.css*",
-              "RelativeToolTip": "WebProje\\wwwroot\\css\\HairStyle.css*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-27T22:07:32.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HairStyleController.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\HairStyleController.cs",
-              "RelativeDocumentMoniker": "WebProje\\Controllers\\HairStyleController.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\HairStyleController.cs",
-              "RelativeToolTip": "WebProje\\Controllers\\HairStyleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T21:48:19.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T19:45:14.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "WebProje\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "WebProje\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-23T17:28:28.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "login-register.css",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
-              "RelativeDocumentMoniker": "WebProje\\wwwroot\\css\\login-register.css",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\wwwroot\\css\\login-register.css",
-              "RelativeToolTip": "WebProje\\wwwroot\\css\\login-register.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-27T22:07:49.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebProje\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebProje\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAzwCgAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T03:24:09.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "WebProje\\Controllers\\AppointmentController.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "WebProje\\Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAEwFwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T17:00:56.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Models\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "WebProje\\Models\\ApiResponse.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Models\\ApiResponse.cs",
-              "RelativeToolTip": "WebProje\\Models\\ApiResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T21:50:50.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
               "Title": "Appointment.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Models\\Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Models\\Appointment.cs",
               "RelativeDocumentMoniker": "WebProje\\Models\\Appointment.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Models\\Appointment.cs",
               "RelativeToolTip": "WebProje\\Models\\Appointment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -301,11 +135,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "PostgreSqlDbContext.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Data\\PostgreSqlDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Data\\PostgreSqlDbContext.cs",
               "RelativeDocumentMoniker": "WebProje\\Data\\PostgreSqlDbContext.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Data\\PostgreSqlDbContext.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Data\\PostgreSqlDbContext.cs",
               "RelativeToolTip": "WebProje\\Data\\PostgreSqlDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -314,37 +148,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebProje\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebProje\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T12:41:49.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "management.cshtml",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Admin\\management.cshtml",
+              "RelativeDocumentMoniker": "WebProje\\Views\\Admin\\management.cshtml",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Admin\\management.cshtml",
+              "RelativeToolTip": "WebProje\\Views\\Admin\\management.cshtml",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAqwEEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T19:57:04.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BookAppointment.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Appointment\\BookAppointment.cshtml",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Appointment\\BookAppointment.cshtml",
               "RelativeDocumentMoniker": "WebProje\\Views\\Appointment\\BookAppointment.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Appointment\\BookAppointment.cshtml",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Appointment\\BookAppointment.cshtml",
               "RelativeToolTip": "WebProje\\Views\\Appointment\\BookAppointment.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-24T17:05:25.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebProje\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WebProje\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-23T17:28:28.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AdminCont.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AdminCont.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Controllers\\AdminCont.cs",
               "RelativeDocumentMoniker": "WebProje\\Controllers\\AdminCont.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Controllers\\AdminCont.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Controllers\\AdminCont.cs",
               "RelativeToolTip": "WebProje\\Controllers\\AdminCont.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAkwKMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T19:58:49.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
               "Title": "20241224233406_dorduncumigration.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241224233406_dorduncumigration.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Migrations\\20241224233406_dorduncumigration.cs",
               "RelativeDocumentMoniker": "WebProje\\Migrations\\20241224233406_dorduncumigration.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241224233406_dorduncumigration.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Migrations\\20241224233406_dorduncumigration.cs",
               "RelativeToolTip": "WebProje\\Migrations\\20241224233406_dorduncumigration.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -353,24 +226,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "management.cshtml",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Views\\Admin\\management.cshtml",
-              "RelativeDocumentMoniker": "WebProje\\Views\\Admin\\management.cshtml",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Views\\Admin\\management.cshtml",
-              "RelativeToolTip": "WebProje\\Views\\Admin\\management.cshtml",
-              "ViewState": "AgIAAEoBAAAAAAAAAAAswFgBAABBAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebProje\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebProje\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T19:57:04.328Z",
+              "WhenOpened": "2024-12-22T19:45:14.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs",
-              "DocumentMoniker": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs",
+              "DocumentMoniker": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs",
               "RelativeDocumentMoniker": "WebProje\\Migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs",
-              "ToolTip": "D:\\webprog\\WPOdev\\WebProje\\Migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs",
+              "ToolTip": "C:\\Users\\Han Bayraktar\\source\\repos\\WebProjeOdev\\WPOdev\\WebProje\\Migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs",
               "RelativeToolTip": "WebProje\\Migrations\\20241224232845_\u00FCc\u00FCnc\u00FCmigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

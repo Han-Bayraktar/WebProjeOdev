@@ -641,8 +641,6 @@ C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\gnl29cakpt-9vr69e8ynj.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\lmyqy7qu0y-87fc7y1x7t.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\tov5dlen48-mlv21k5csn.gz
-C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-heccnwe7ra.gz
-C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-heccnwe7ra.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -857,3 +855,8 @@ D:\webprog\WPOdev\WebProje\bin\Debug\net9.0\RestSharp.dll
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-4t2hwejms0.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-4t2hwejms0.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\x0r8hgplcy-fcsv7gzl4v.gz
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\bin\Debug\net9.0\RestSharp.dll
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\x0r8hgplcy-fcsv7gzl4v.gz
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-4t2hwejms0.gz
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-4t2hwejms0.gz

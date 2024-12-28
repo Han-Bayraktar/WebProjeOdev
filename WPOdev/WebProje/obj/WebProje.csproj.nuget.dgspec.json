@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\webprog\\WPOdev\\WebProje\\WebProje.csproj": {}
+    "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\WebProje.csproj": {}
   },
   "projects": {
-    "D:\\webprog\\WPOdev\\WebProje\\WebProje.csproj": {
+    "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\WebProje.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\webprog\\WPOdev\\WebProje\\WebProje.csproj",
+        "projectUniqueName": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\WebProje.csproj",
         "projectName": "WebProje",
-        "projectPath": "D:\\webprog\\WPOdev\\WebProje\\WebProje.csproj",
-        "packagesPath": "C:\\Users\\berat\\.nuget\\packages\\",
-        "outputPath": "D:\\webprog\\WPOdev\\WebProje\\obj\\",
+        "projectPath": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\WebProje.csproj",
+        "packagesPath": "C:\\Users\\Han Bayraktar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Han Bayraktar\\Source\\Repos\\WebProjeOdev\\WPOdev\\WebProje\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\berat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Han Bayraktar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +40,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -84,6 +80,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.101, 9.0.101]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

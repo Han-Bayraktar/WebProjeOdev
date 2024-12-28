@@ -1,182 +1,156 @@
-﻿@model List<WebProje.Models.Service>
+﻿@model IEnumerable<Service>
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication
 
-@using System.Security.Claims // Bu satırı ekleyin
 
-@{
-    ViewData["Title"] = "Randevu Alma";
-}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu Al</title>
 
-<h2>@ViewData["Title"]</h2>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJxX0RZlQWfQ8QxgXO2XZ0wHjNU2w7y8Kfh5B1qipHRpXtJ97ft7vA6egqfC" crossorigin="anonymous">
 
-<div>
-    <h3>Servis Seçin</h3>
-    <select id="serviceSelect" onchange="loadAppointments()">
-        <option value="">Servis Seçin</option>
-        @foreach (var service in Model)
-        {
-            <option value="@service.Id">@service.Name</option>
-        }
-    </select>
-</div>
-
-<div id="appointmentsContainer">
-    <h3>Randevular</h3>
-    <table id="appointmentsTable">
-        <thead>
-            <tr>
-                <th>Gün</th>
-                <th>Tarih</th>
-                <th>Randevu Saatleri</th>
-            </tr>
-        </thead>
-        <tbody id="appointments"></tbody>
-    </table>
-</div>
-
-@section Styles {
     <style>
-        #appointmentsTable {
-            width: 100%;
-            border-collapse: collapse;
+        .btn {
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+            .btn:disabled {
+                cursor: not-allowed;
+            }
+
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-auto {
+            margin-bottom: 10px;
+        }
+
+        h4 {
             margin-top: 20px;
         }
-
-        #appointmentsTable th, #appointmentsTable td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-
-        #appointmentsTable th {
-            background-color: #f2f2f2;
-        }
-
-        #appointmentsTable td button {
-            margin: 5px;
-            padding: 10px;
-            font-size: 14px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        #appointmentsTable td button:hover {
-            opacity: 0.8;
-        }
-
-        #appointmentsTable td button:disabled {
-            cursor: not-allowed;
-            background-color: gray;
-        }
-
-        h2, h3 {
-            font-family: 'Arial', sans-serif;
-        }
-
-        select {
-            padding: 8px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        select:focus {
-            border-color: #5c9e6e;
-            outline: none;
-        }
-
-        #appointmentsContainer {
-            margin-top: 30px;
-        }
-
-        .appointment-button-available {
-            background-color: green;
-            color: white;
-        }
-
-        .appointment-button-cancelled {
-            background-color: red;
-            color: white;
-        }
-
-        .appointment-button-disabled {
-            background-color: gray;
-            color: white;
-        }
     </style>
-}
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Randevu Al</h2>
 
-@section Scripts {
-    <script>
-        // Seçilen servise ait randevuları yükle
-        function loadAppointments() {
-            const serviceId = document.getElementById('serviceSelect').value;
-            if (!serviceId) return;
+        <div class="mb-3">
+            <label for="serviceSelect">Hizmet Seç:</label>
+            <select id="serviceSelect" class="form-select">
+                <option value="" disabled selected>Bir hizmet seçin</option>
+                @foreach (var service in Model)
+                {
+                    <option value="@service.Id">@service.Name</option>
+                }
+            </select>
+        </div>
 
-            fetch(`/Appointment/GetAvailableAppointments?serviceId=${serviceId}`)
-                .then(response => response.json())
-                .then(appointments => {
-                    const appointmentsContainer = document.getElementById('appointments');
-                    appointmentsContainer.innerHTML = ''; // Mevcut içeriği temizle
+        <div id="appointmentSlots" class="row">
+        </div>
+    </div>
 
-                    const daysOfWeek = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
-                    const date = new Date();
-                    let appointmentsHtml = '';
+    @section Scripts {
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            const currentUserId = parseInt("@User.FindFirstValue(ClaimTypes.NameIdentifier)");
 
-                    // Günlere göre randevuları grupla
-                    daysOfWeek.forEach((day, index) => {
-                        const dayAppointments = appointments.filter(app => new Date(app.appointmentTime).getDay() === index);
+            // Günlerin dizisini düzeltelim
+            const daysOfWeek = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
 
-                        if (dayAppointments.length > 0) {
-                            const dayDate = new Date(dayAppointments[0].appointmentTime);
-                            const formattedDate = `${dayDate.getDate()}.${dayDate.getMonth() + 1}.${dayDate.getFullYear()}`;
+            $("#serviceSelect").change(function () {
+                const serviceId = $(this).val();
+                if (!serviceId) return;
 
-                            appointmentsHtml += `<tr><td>${day}</td><td>${formattedDate}</td><td>`;
+                $.getJSON(`/Appointment/GetAvailableAppointments?serviceId=${serviceId}`, function (appointments) {
+                    const slotsContainer = $("#appointmentSlots");
+                    slotsContainer.empty();
 
-                            dayAppointments.forEach(app => {
-                                const appointmentTime = new Date(app.appointmentTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                    const groupedAppointments = {};
 
-                                // Status true olduğunda buton gri renkte olacak ve disabled olacak
-                                const buttonStyle = app.status ? 'background-color: gray; color: white; cursor: not-allowed;' : 'background-color: green; color: white;';
-                                const isDisabled = app.status ? 'disabled' : '';
-                                const isUserAppointment = app.userId === 1; // Giriş yapan kullanıcı ID'si ile kontrol et
+                    appointments.forEach(function (appointment) {
+                        const appointmentDate = new Date(appointment.appointmentTime); 
+                        const dayOfWeek = daysOfWeek[appointmentDate.getDay()]; 
+                        const dateFormatted = `${appointmentDate.toLocaleDateString()}`; 
 
-                                appointmentsHtml += `
-                                    <button
-                                        style="${buttonStyle}"
-                                        ${isDisabled}
-                                        ${isUserAppointment ? '' : 'disabled'}
-                                        onclick="bookAppointment(${app.id}, ${app.userId})">
-                                        ${appointmentTime}
-                                    </button>
-                                `;
-                            });
-
-                            appointmentsHtml += '</td></tr>';
+                        if (!groupedAppointments[dayOfWeek]) {
+                            groupedAppointments[dayOfWeek] = [];
                         }
+
+                        groupedAppointments[dayOfWeek].push({
+                            id: appointment.id,
+                            appointmentTime: appointmentDate,
+                            status: appointment.status,
+                            userId: appointment.userId
+                        });
                     });
 
-                    appointmentsContainer.innerHTML = appointmentsHtml;
-                });
-        }
+                    for (const day in groupedAppointments) {
+                        const dayRow = $("<div>").addClass("col-12 col-md-6 col-lg-4 mb-4");
+                        const dayTitle = $("<h4>").text(`${day} ${groupedAppointments[day][0].appointmentTime.toLocaleDateString()}`).addClass("text-center");
 
-        // Randevu al veya iptal et
-        function bookAppointment(appointmentId, userId) {
-            if (confirm("Randevunuzu iptal etmek istediğinize emin misiniz?")) {
-                fetch(`/Appointment/CancelAppointment?appointmentId=${appointmentId}&userId=${userId}`, {
-                    method: 'POST'
-                })
-                .then(response => {
-                    if (response.ok) {
-                        alert('Randevunuz başarıyla iptal edildi.');
-                        loadAppointments(); // Randevu iptal edildikten sonra randevuları güncelle
-                    } else {
-                        alert('Randevu iptal işlemi başarısız oldu.');
+                        const slotContainer = $("<div>").addClass("d-flex flex-wrap justify-content-center");
+
+                        groupedAppointments[day].forEach(function (appointment) {
+                            const button = $("<button>")
+                                .addClass("btn btn-lg m-2")
+                                .text(appointment.appointmentTime.toLocaleTimeString()) 
+                                .data("appointmentId", appointment.id)
+                                .prop("disabled", appointment.status) 
+                                .css("background-color", appointment.status
+                                    ? (appointment.userId === currentUserId ? "#ffc107" : "#6c757d") 
+                                    : "#28a745"); 
+
+                            if (!appointment.status) {
+                                button.click(function () {
+                                    const appointmentId = $(this).data("appointmentId");
+                                    $.post("/Appointment/BookAppointment", { appointmentId: appointmentId }, function (response) {
+                                        alert(response.message);
+                                        $("#serviceSelect").change(); 
+                                    });
+                                });
+                            } else if (appointment.userId === currentUserId) {
+                                button.prop("disabled", false); 
+                                button.click(function () {
+                                    if (confirm("Randevunuzu iptal etmek istediğinize emin misiniz?")) {
+                                        const appointmentId = $(this).data("appointmentId");
+                                        $.post("/Appointment/CancelAppointment", { appointmentId: appointmentId }, function (response) {
+                                            alert(response.message);
+                                            $("#serviceSelect").change(); 
+                                        });
+                                    }
+                                });
+                            }
+
+                            slotContainer.append(button);
+                        });
+
+                        dayRow.append(dayTitle).append(slotContainer);
+                        slotsContainer.append(dayRow);
                     }
                 });
-            }
-        }
-    </script>
-}
+            });
+        </script>
+    }
+</body>
+</html>

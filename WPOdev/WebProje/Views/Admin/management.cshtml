@@ -1,132 +1,59 @@
-﻿@{
-    ViewData["Title"] = "Admin Management";
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Sayfa Arka Planı */
         body {
-            background-color: #2f2f2f; /* Koyu gri arka plan */
+            background-color: #2f2f2f;
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        /* Container */
         .container {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
+            margin: 20px 0;
         }
 
-        /* Tablo Seçimi */
-        .table-selector {
-            width: 30%;
+        .table-selector,
+        .table-data,
+        .crud-actions {
             background-color: #333;
             padding: 15px;
             border-radius: 8px;
+            margin-bottom: 20px;
         }
 
-        /* Tablo Verileri */
         .table-data {
-            width: 60%;
-            background-color: #444;
-            padding: 20px;
-            border-radius: 8px;
             overflow-x: auto;
         }
+
+            .table-selector h3,
+            .table-data h3 {
+                color: #fff;
+            }
 
             .table-data table {
                 width: 100%;
                 border-collapse: collapse;
+                color: white; /* Tablodaki verileri beyaz renkte yazmak için */
             }
 
             .table-data th, .table-data td {
                 padding: 10px;
                 text-align: left;
+                background-color: #444;
             }
 
             .table-data th {
                 background-color: #555;
             }
 
-            .table-data td {
-                background-color: #666;
-            }
-
-        /* CRUD Form */
-        .crud-actions {
-            width: 60%;
-            background-color: #555;
-            padding: 20px;
-            border-radius: 8px;
-            display: none;
-        }
-
-            .crud-actions h3 {
-                margin-top: 0;
-            }
-
-            .crud-actions form {
-                display: flex;
-                flex-direction: column;
-            }
-
-                .crud-actions form div {
-                    margin-bottom: 15px;
-                }
-
-                .crud-actions form label {
-                    display: block;
-                    margin-bottom: 5px;
-                }
-
-                .crud-actions form input {
-                    width: 100%;
-                    padding: 10px;
-                    background-color: #333;
-                    color: white;
-                    border: 1px solid #444;
-                    border-radius: 5px;
-                }
-
-                .crud-actions form button {
-                    background-color: #28a745;
-                    color: white;
-                    padding: 10px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    margin-top: 10px;
-                }
-
-                    .crud-actions form button:hover {
-                        background-color: #218838;
-                    }
-
-                    .crud-actions form button[type="button"] {
-                        background-color: #dc3545;
-                        margin-left: 10px;
-                    }
-
-                        .crud-actions form button[type="button"]:hover {
-                            background-color: #c82333;
-                        }
-
-        /* Tablo başlığı ve buton stilini düzenle */
-        .table-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Butonlar */
         .action-button {
             background-color: #007bff;
             color: white;
@@ -163,26 +90,75 @@
             .delete-button:hover {
                 background-color: #c82333;
             }
+
+        .crud-actions form {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .crud-actions form div {
+                margin-bottom: 15px;
+            }
+
+            .crud-actions form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .crud-actions form input {
+                width: 100%;
+                padding: 10px;
+                background-color: #333;
+                color: white;
+                border: 1px solid #444;
+                border-radius: 5px;
+            }
+
+            .crud-actions form button {
+                background-color: #28a745;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+                .crud-actions form button[type="button"] {
+                    background-color: #dc3545;
+                    margin-left: 10px;
+                }
+
+                    .crud-actions form button[type="button"]:hover {
+                        background-color: #c82333;
+                    }
+
     </style>
 </head>
 <body>
 
-    <h2>@ViewData["Title"]</h2>
-
     <div class="container">
-        <!-- Tablo Seçimi -->
-        <div class="table-selector">
-            <h3>Veritabanı Tabloları</h3>
-            <select id="tableSelect" onchange="loadTableData(this.value)">
-                <option value="Employees">Employees</option>
-                <option value="Services">Services</option>
-                <option value="Users">Users</option>
-                <option value="Appointments">Appointments</option>
-            </select>
-        </div>
+        <h2>@ViewData["Title"]</h2>
 
-        <!-- Tablo Verileri -->
-        <div id="tableData" class="table-data"></div>
+        <div class="row">
+            <!-- Tablo Seçimi -->
+            <div class="col-md-4 col-12 mb-4">
+                <div class="table-selector">
+                    <h3>Veritabanı Tabloları</h3>
+                    <select id="tableSelect" class="form-select" onchange="loadTableData(this.value)">
+                        <option value="Employees">Employees</option>
+                        <option value="Services">Services</option>
+                        <option value="Users">Users</option>
+                        <option value="Appointments">Appointments</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Tablo Verileri -->
+            <div class="col-md-8 col-12">
+                <div id="tableData" class="table-data"></div>
+            </div>
+        </div>
 
         <!-- CRUD Form -->
         <div id="crudActions" class="crud-actions">
@@ -195,6 +171,9 @@
         </div>
     </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         let selectedTable = null;
         let selectedRecordId = null;
@@ -205,37 +184,36 @@
             fetch(`/api/admin/get${capitalize(tableName)}`)
                 .then(response => response.json())
                 .then(data => {
-                    console.log("API Yanıtı:", data);
-
                     if (Array.isArray(data) && data.length > 0) {
                         const columns = Object.keys(data[0]);
                         const rows = data.map(item => Object.values(item));
 
-                        let tableHtml = `<div class="table-header">
-                                                    <h3>${capitalize(tableName)} Tablosu</h3>
-                                                    <button class="action-button add-button" onclick="showAddForm('${tableName}')">Yeni Eleman Ekle</button>
-                                                   </div>`;
-                        tableHtml += "<table border='1'><tr>";
+                        let tableHtml = `
+                                    <div class="table-header d-flex justify-content-between align-items-center">
+                                        <h3>${capitalize(tableName)} Tablosu</h3>
+                                        <button class="action-button add-button" onclick="showAddForm('${tableName}')">Yeni Eleman Ekle</button>
+                                    </div>`;
+                        tableHtml += "<table class='table table-striped table-bordered'><thead><tr>";
 
                         columns.forEach(column => {
                             tableHtml += `<th>${column}</th>`;
                         });
-                        tableHtml += "<th>Actions</th></tr>";
+                        tableHtml += "<th>Actions</th></tr></thead><tbody>";
 
                         rows.forEach((row, index) => {
                             tableHtml += "<tr>";
                             row.forEach(cell => {
                                 tableHtml += `<td>${cell}</td>`;
                             });
-                            tableHtml += `<td><button class="action-button edit-button" onclick="editRecord(${index}, ${row[0]})">Düzenle</button></td>`;
+                            tableHtml += `<td><button class="action-button edit-button" onclick="editRecord(${index}, ${row[0]})">Düzenle</button>`;
+                            tableHtml += `<button class="action-button delete-button" onclick="deleteRecord(${row[0]})">Sil</button></td>`;
                             tableHtml += "</tr>";
                         });
 
-                        tableHtml += "</table>";
+                        tableHtml += "</tbody></table>";
                         document.getElementById("tableData").innerHTML = tableHtml;
                         document.getElementById("crudActions").style.display = "none";
                     } else {
-                        console.error("Veri formatı hatalı:", data);
                         document.getElementById("tableData").innerHTML = "<p>Veri yüklenemedi. Lütfen tekrar deneyin.</p>";
                     }
                 })
@@ -243,193 +221,95 @@
         }
 
         function showAddForm(tableName) {
-    selectedTable = tableName;
-    const crudActionsDiv = document.getElementById("crudActions");
-
-    crudActionsDiv.innerHTML = `<h3>Yeni ${capitalize(tableName)} Ekle</h3>
-                <form id="crudForm">
-                    <div id="formFields"></div>
-                    <button type="button" onclick="submitForm()">Kaydet</button>
-                </form>`;
-
-    fetch(`/api/admin/get${capitalize(selectedTable)}`)
-        .then(response => response.json())
-        .then(data => {
-            if (!data || data.length === 0) {
-                console.error("Veri formatı hatalı veya boş:", data);
-                return;
-            }
-
-            const formFieldsDiv = document.getElementById("formFields");
-
-            // Yeni eleman eklemek için form alanlarını oluştur
-            const columns = Object.keys(data[0]);
-            columns.forEach(column => {
-                // 'id' alanı da dahil, tüm alanları düzenlenebilir yapıyoruz
-                const fieldHtml = `
-                    <div>
-                        <label>${capitalize(column)}:</label>
-                        <input type="text" id="field_${column}" name="${column}">
-                    </div>`;
-
-                formFieldsDiv.innerHTML += fieldHtml;
-            });
-
-            crudActionsDiv.style.display = "block"; // Görünür yap
-        })
-        .catch(error => console.error("Hata:", error));
-}
-
-
-
-        function editRecord(index, id) {
-            selectedRecordId = id;
-
+            selectedTable = tableName;
             const crudActionsDiv = document.getElementById("crudActions");
 
-            // CRUD işlemleri div'ini temizle
-            crudActionsDiv.innerHTML = "";
+            crudActionsDiv.innerHTML = `<h3>Yeni ${capitalize(tableName)} Ekle</h3>
+                                <form id="crudForm">
+                                    <div id="formFields"></div>
+                                    <button type="button" onclick="submitForm()">Kaydet</button>
+                                </form>`;
 
             fetch(`/api/admin/get${capitalize(selectedTable)}`)
                 .then(response => response.json())
                 .then(data => {
-                    if (!data || data.length === 0) {
-                        console.error("Veri formatı hatalı veya boş:", data);
-                        return;
-                    }
-
-                    // Kaydı ID'ye göre bul
-                    const record = data.find(item => item.id === id);
-                    if (!record) {
-                        console.error("Kayıt bulunamadı:", id);
-                        return;
-                    }
-
-                    let formHtml = `<h3>${capitalize(selectedTable)} Düzenle</h3>
-                            <form id="crudForm">
-                                <div id="formFields"></div>
-                                <button type="button" onclick="submitForm()">Kaydet</button>
-                            </form>`;
-
-                    crudActionsDiv.innerHTML = formHtml;
                     const formFieldsDiv = document.getElementById("formFields");
+                    const firstRecord = data[0];
+                    const fields = Object.keys(firstRecord);
 
-                    const columns = Object.keys(record);
-                    columns.forEach(column => {
-                        const isIdField = column === "id";
-                        const fieldHtml = `
+                    fields.forEach(field => {
+                        formFieldsDiv.innerHTML += `
                                     <div>
-                                        <label>${capitalize(column)}:</label>
-                                        <input type="text" id="field_${column}" name="${column}" value="${record[column]}" ${isIdField ? '' : ''}>
+                                        <label for="${field}">${field}</label>
+                                        <input type="text" id="${field}" name="${field}">
                                     </div>`;
-                        formFieldsDiv.innerHTML += fieldHtml;
                     });
+                });
 
-                    crudActionsDiv.style.display = "block";
-                })
-                .catch(error => console.error("Hata:", error));
+            crudActionsDiv.style.display = "block";
         }
-
-
-
-
 
         function submitForm() {
-            const form = document.getElementById("crudForm");
-            const formData = new FormData(form);
-
+            const formData = new FormData(document.getElementById("crudForm"));
             const data = {};
+
             formData.forEach((value, key) => {
-                data[key.replace("field_", "")] = value; 
-                if (field === "appointmentTime") {
-                    data[field] = new Date(value).toISOString(); 
-                }
+                data[key] = value;
             });
 
-            console.log("Gönderilecek veri:", data); 
-
-            if (selectedRecordId) {
-                const url = `/api/admin/update${capitalize(selectedTable)}/${selectedRecordId}`;
-                console.log("Güncelleme URL'si:", url); 
-
-                fetch(url, {
-                    method: "PUT",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(data), 
-                })
-                    .then((response) => {
-                        console.log("Güncelleme yanıt durumu:", response.status); 
-                        if (!response.ok) {
-                            return response.text().then((text) => {
-                                console.error("API Hatası:", text); 
-                                throw new Error(`Güncelleme başarısız: ${text}`);
-                            });
-                        }
-                        return response.json();
-                    })
-                    .then((updatedData) => {
-                        console.log("Kayıt güncellendi:", updatedData); 
-                        loadTableData(selectedTable);
-                        document.getElementById("crudActions").style.display = "none";
-                    })
-                    .catch((error) => {
-                        console.error("Güncelleme sırasında hata oluştu:", error); 
-                        alert(`Hata oluştu: ${error.message}`);
-                    });
-            } else {
-                const url = `/api/admin/add${capitalize(selectedTable)}`;
-                console.log("Yeni kayıt URL'si:", url); 
-
-                fetch(url, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(data),
-                })
-                    .then((response) => {
-                        console.log("Kayıt ekleme yanıt durumu:", response.status); 
-                        if (!response.ok) {
-                            return response.text().then((text) => {
-                                console.error("API Hatası:", text);
-                                throw new Error(`Kayıt ekleme başarısız: ${text}`);
-                            });
-                        }
-                        return response.json();
-                    })
-                    .then((newData) => {
-                        console.log("Yeni kayıt eklendi:", newData);
-                        loadTableData(selectedTable);
-                        document.getElementById("crudActions").style.display = "none";
-                    })
-                    .catch((error) => {
-                        console.error("Kayıt ekleme sırasında hata oluştu:", error);
-                        alert(`Hata oluştu: ${error.message}`);
-                    });
-            }
-        }
-
-
-
-
-        function deleteRecord() {
-            if (!selectedRecordId) {
-                console.error("Silinecek bir kayıt seçilmedi.");
-                return;
-            }
-
-            fetch(`/api/admin/delete${capitalize(selectedTable)}/${selectedRecordId}`, {
-                method: "DELETE"
+            fetch(`/api/admin/add${capitalize(selectedTable)}`, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
             })
                 .then(response => response.json())
                 .then(data => {
-                    console.log("Kayıt silindi:", data);
                     loadTableData(selectedTable);
                     document.getElementById("crudActions").style.display = "none";
                 })
                 .catch(error => console.error("Hata:", error));
+        }
+
+        function editRecord(index, recordId) {
+            selectedRecordId = recordId;
+            const crudActionsDiv = document.getElementById("crudActions");
+            crudActionsDiv.innerHTML = `<h3>Veri Düzenle</h3>
+                                <form id="crudForm">
+                                    <div id="formFields"></div>
+                                    <button type="button" onclick="submitForm()">Kaydet</button>
+                                </form>
+                                <button type="button" onclick="deleteRecord(${recordId})">Sil</button>`;
+
+            fetch(`/api/admin/get${capitalize(selectedTable)}`)
+                .then(response => response.json())
+                .then(data => {
+                    const record = data.find(item => item.Id === recordId);
+                    const formFieldsDiv = document.getElementById("formFields");
+                    const fields = Object.keys(record);
+
+                    fields.forEach(field => {
+                        formFieldsDiv.innerHTML += `
+                                    <div>
+                                        <label for="${field}">${field}</label>
+                                        <input type="text" id="${field}" name="${field}" value="${record[field]}">
+                                    </div>`;
+                    });
+                });
+
+            crudActionsDiv.style.display = "block";
+        }
+
+        function deleteRecord(recordId) {
+            if (confirm("Emin misiniz? Bu işlem geri alınamaz!")) {
+                fetch(`/api/admin/delete${capitalize(selectedTable)}?id=${recordId}`, {
+                    method: 'DELETE'
+                })
+                    .then(response => response.json())
+                    .then(data => loadTableData(selectedTable))
+                    .catch(error => console.error("Hata:", error));
+            }
         }
 
         function capitalize(str) {
