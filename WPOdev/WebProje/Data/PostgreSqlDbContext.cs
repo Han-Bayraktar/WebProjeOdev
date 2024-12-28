@@ -48,37 +48,38 @@ public class PostgreSqlDbContext : DbContext
             Price = 50
         });
 
-        // Appointment tablosu için varsayılan bir randevu
-        modelBuilder.Entity<Appointment>().HasData(new Appointment
-        {
-            Id = 1,
-            AppointmentTime = new DateTime(2024, 12, 30, 9, 0, 0, DateTimeKind.Utc),
-            ServiceId = 1,
-            EmployeeId = 1,
-            UserId = 1,
-            Status = false
-        });
-
-        // Birden fazla randevu eklemek için döngü
         var appointments = new List<Appointment>();
         int idCounter = 1000; // Çakışmayı önlemek için ID başlangıç değeri
 
         var startDate = new DateTime(2024, 12, 30);
         var endDate = new DateTime(2025, 1, 4);
 
-        for (var date = startDate; date <= endDate; date = date.AddDays(1))
+        // Hizmet ve çalışan eşleştirmelerini döngü ile işleme alıyoruz
+        var serviceEmployeeMappings = new List<(int ServiceId, int EmployeeId)>
+    {
+        (1, 1),
+        (2, 2),
+        (3, 3),
+        (4, 4),
+        (5, 1)
+    };
+
+        foreach (var mapping in serviceEmployeeMappings)
         {
-            for (var time = new TimeSpan(9, 0, 0); time < new TimeSpan(17, 0, 0); time = time.Add(new TimeSpan(0, 30, 0)))
+            for (var date = startDate; date <= endDate; date = date.AddDays(1))
             {
-                appointments.Add(new Appointment
+                for (var time = new TimeSpan(6, 0, 0); time < new TimeSpan(14, 0, 0); time = time.Add(new TimeSpan(0, 30, 0)))
                 {
-                    Id = idCounter++,
-                    AppointmentTime = new DateTime(date.Year, date.Month, date.Day, time.Hours, time.Minutes, 0, DateTimeKind.Utc),
-                    ServiceId = 1,
-                    EmployeeId = 1,
-                    UserId = 1,
-                    Status = false
-                });
+                    appointments.Add(new Appointment
+                    {
+                        Id = idCounter++,
+                        AppointmentTime = new DateTime(date.Year, date.Month, date.Day, time.Hours, time.Minutes, 0, DateTimeKind.Utc),
+                        ServiceId = mapping.ServiceId,
+                        EmployeeId = mapping.EmployeeId,
+                        UserId = 1, 
+                        Status = false
+                    });
+                }
             }
         }
 

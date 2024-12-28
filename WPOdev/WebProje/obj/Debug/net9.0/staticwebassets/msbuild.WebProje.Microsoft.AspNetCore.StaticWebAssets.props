@@ -1254,8 +1254,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0m3vkjsrj2</Fingerprint>
-      <Integrity>+JtNuAK48WGgP9qbNIYF1wm83szWBhZ/5qxyXIRKwfE=</Integrity>
+      <Fingerprint>2mpy78dyg6</Fingerprint>
+      <Integrity>Ko1xYMXn770UBKLbOLjBBpeiznjZUl5pc2OhQE/DPBk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Resimler\instagram.png'))</OriginalItemSpec>
@@ -1344,8 +1344,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>28413tjxfv</Fingerprint>
-      <Integrity>Xk3u7VMaUWb/5hx0WpIvyc3QC3NZ/qhUX2MrwjsYVnc=</Integrity>
+      <Fingerprint>2j63zgcoil</Fingerprint>
+      <Integrity>zkZOd9arrFwIiW5iKE+AiU9ohSF8TjyMacbP+RjowlY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Resimler\robot.jpeg'))</OriginalItemSpec>

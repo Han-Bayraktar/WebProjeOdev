@@ -110,6 +110,28 @@
             padding: 3.125rem 3.125rem 0rem 3.125rem;
             margin-bottom: 1.5625rem;
         }
+
+        .alert-success {
+            display: block;
+            min-width: 500px;
+            min-height: 73px;
+            margin-top: 100px;
+            position: fixed;
+            top: 10%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        }
+
+
+        .alert-success {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .alert-danger {
+            background-color: #dc3545;
+            color: white;
+        }
     </style>
     @RenderSection("Styles", required: false)
 </head>
@@ -175,6 +197,13 @@
         </div>
     </nav>
 
+    @if (ViewData["Message"] != null)
+    {
+        <div id="alertMessage" class="alert-success" role="alert">
+            @ViewData["Message"]
+        </div>
+    }
+
     <!-- Main Content -->
    
         <main role="main">
@@ -194,9 +223,13 @@
     <script src="~/scripts/flickity.pkgd.min.js"></script>
     <script src="~/scripts/script.js"></script>
     <script>
+        $(document).ready(function () {
+            var alertMessage = $('#alertMessage');
+            if (alertMessage.length) {
+                alertMessage.fadeIn(500).delay(3000).fadeOut(500); 
+            }
+        });
         AOS.init();
-
-       // Change navbar style on scroll
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
                 $('.navbar').addClass('solid');

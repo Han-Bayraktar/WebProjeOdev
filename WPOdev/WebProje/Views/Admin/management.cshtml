@@ -14,6 +14,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            margin-top: 80px;
         }
 
         .container {
@@ -31,28 +32,34 @@
 
         .table-data {
             overflow-x: auto;
+            color: white;
         }
 
-            .table-selector h3,
-            .table-data h3 {
-                color: #fff;
-            }
+        .table-selector h3,
+        .table-data h3 {
+            color: #fff;
 
-            .table-data table {
-                width: 100%;
-                border-collapse: collapse;
-                color: white; /* Tablodaki verileri beyaz renkte yazmak için */
-            }
+        }
 
-            .table-data th, .table-data td {
-                padding: 10px;
-                text-align: left;
-                background-color: #444;
-            }
+        .table-data table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white; 
+        }
 
-            .table-data th {
-                background-color: #555;
-            }
+        .table-data th, .table-data td {
+            padding: 10px;
+            text-align: left;
+            background-color: #444;
+            color: white;
+        }
+
+        .table-data th {
+            background-color: #555;
+            color:white;
+
+        }
+
 
         .action-button {
             background-color: #007bff;
@@ -63,76 +70,77 @@
             cursor: pointer;
         }
 
-            .action-button:hover {
-                background-color: #0056b3;
-            }
+        .action-button:hover {
+            background-color: #0056b3;
+        }
 
         .add-button {
             background-color: #17a2b8;
         }
 
-            .add-button:hover {
-                background-color: #138496;
-            }
+        .add-button:hover {
+            background-color: #138496;
+        }
 
         .edit-button {
             background-color: #28a745;
         }
 
-            .edit-button:hover {
-                background-color: #218838;
-            }
+        .edit-button:hover {
+            background-color: #218838;
+        }
 
         .delete-button {
             background-color: #dc3545;
         }
 
-            .delete-button:hover {
-                background-color: #c82333;
-            }
+        .delete-button:hover {
+            background-color: #c82333;
+        }
 
         .crud-actions form {
             display: flex;
             flex-direction: column;
         }
 
-            .crud-actions form div {
-                margin-bottom: 15px;
-            }
+        .crud-actions form div {
+            margin-bottom: 15px;
+        }
 
-            .crud-actions form label {
-                display: block;
-                margin-bottom: 5px;
-            }
+        .crud-actions form label {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-            .crud-actions form input {
-                width: 100%;
-                padding: 10px;
-                background-color: #333;
-                color: white;
-                border: 1px solid #444;
-                border-radius: 5px;
-            }
+        .crud-actions form input {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 5px;
+        }
 
-            .crud-actions form button {
-                background-color: #28a745;
-                color: white;
-                padding: 10px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                margin-top: 10px;
-            }
+        .crud-actions form button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
 
-                .crud-actions form button[type="button"] {
-                    background-color: #dc3545;
-                    margin-left: 10px;
-                }
+        .crud-actions form button[type="button"] {
+            background-color: #dc3545;
+            margin-left: 10px;
+        }
 
-                    .crud-actions form button[type="button"]:hover {
-                        background-color: #c82333;
-                    }
+        .crud-actions form button[type="button"]:hover {
+            background-color: #c82333;
+        }
 
+        
     </style>
 </head>
 <body>
@@ -154,7 +162,6 @@
                 </div>
             </div>
 
-            <!-- Tablo Verileri -->
             <div class="col-md-8 col-12">
                 <div id="tableData" class="table-data"></div>
             </div>
@@ -171,7 +178,6 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
@@ -188,7 +194,7 @@
                         const columns = Object.keys(data[0]);
                         const rows = data.map(item => Object.values(item));
 
-                        let tableHtml = `
+                        let tableHtml = ` 
                                     <div class="table-header d-flex justify-content-between align-items-center">
                                         <h3>${capitalize(tableName)} Tablosu</h3>
                                         <button class="action-button add-button" onclick="showAddForm('${tableName}')">Yeni Eleman Ekle</button>
@@ -229,92 +235,92 @@
                                     <div id="formFields"></div>
                                     <button type="button" onclick="submitForm()">Kaydet</button>
                                 </form>`;
+            loadFormFields();
+        }
 
-            fetch(`/api/admin/get${capitalize(selectedTable)}`)
-                .then(response => response.json())
-                .then(data => {
-                    const formFieldsDiv = document.getElementById("formFields");
-                    const firstRecord = data[0];
-                    const fields = Object.keys(firstRecord);
+        function loadFormFields() {
+            const formFieldsDiv = document.getElementById("formFields");
 
-                    fields.forEach(field => {
-                        formFieldsDiv.innerHTML += `
-                                    <div>
-                                        <label for="${field}">${field}</label>
-                                        <input type="text" id="${field}" name="${field}">
-                                    </div>`;
-                    });
-                });
+            const fields = {
+                Employees: ["name", "surname", "email"],
+                Services: ["name", "description"],
+                Users: ["name", "surname", "email"],
+                Appointments: ["userId", "appointmentDate"]
+            };
 
-            crudActionsDiv.style.display = "block";
+            const currentFields = fields[selectedTable] || [];
+            formFieldsDiv.innerHTML = "";
+            currentFields.forEach(field => {
+                formFieldsDiv.innerHTML += `
+                    <div>
+                        <label for="${field}">${capitalize(field)}</label>
+                        <input type="text" id="${field}" name="${field}" />
+                    </div>
+                `;
+            });
         }
 
         function submitForm() {
-            const formData = new FormData(document.getElementById("crudForm"));
-            const data = {};
+            const form = document.getElementById("crudForm");
+            const formData = new FormData(form);
 
+            const data = {};
             formData.forEach((value, key) => {
                 data[key] = value;
             });
 
-            fetch(`/api/admin/add${capitalize(selectedTable)}`, {
-                method: 'POST',
-                body: JSON.stringify(data),
+            fetch(`/api/admin/${selectedTable.toLowerCase()}s`, {
+                method: selectedRecordId ? "PUT" : "POST",
                 headers: {
-                    'Content-Type': 'application/json'
-                }
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
             })
                 .then(response => response.json())
-                .then(data => {
+                .then(() => {
                     loadTableData(selectedTable);
-                    document.getElementById("crudActions").style.display = "none";
                 })
                 .catch(error => console.error("Hata:", error));
         }
 
         function editRecord(index, recordId) {
             selectedRecordId = recordId;
-            const crudActionsDiv = document.getElementById("crudActions");
-            crudActionsDiv.innerHTML = `<h3>Veri Düzenle</h3>
-                                <form id="crudForm">
-                                    <div id="formFields"></div>
-                                    <button type="button" onclick="submitForm()">Kaydet</button>
-                                </form>
-                                <button type="button" onclick="deleteRecord(${recordId})">Sil</button>`;
-
-            fetch(`/api/admin/get${capitalize(selectedTable)}`)
+            const fields = document.querySelectorAll("#formFields input");
+            fetch(`/api/admin/${selectedTable.toLowerCase()}s/${recordId}`)
                 .then(response => response.json())
                 .then(data => {
-                    const record = data.find(item => item.Id === recordId);
-                    const formFieldsDiv = document.getElementById("formFields");
-                    const fields = Object.keys(record);
-
-                    fields.forEach(field => {
-                        formFieldsDiv.innerHTML += `
-                                    <div>
-                                        <label for="${field}">${field}</label>
-                                        <input type="text" id="${field}" name="${field}" value="${record[field]}">
-                                    </div>`;
+                    const form = document.getElementById("crudForm");
+                    form.innerHTML = `<h3>Düzenle ${capitalize(selectedTable)}</h3>`;
+                    Object.entries(data).forEach(([key, value]) => {
+                        form.innerHTML += `<div>
+                                            <label for="${key}">${capitalize(key)}</label>
+                                            <input type="text" id="${key}" name="${key}" value="${value}" />
+                                        </div>`;
                     });
-                });
-
-            crudActionsDiv.style.display = "block";
+                    form.innerHTML += `<button type="button" onclick="submitForm()">Kaydet</button>`;
+                })
+                .catch(error => console.error("Hata:", error));
         }
 
         function deleteRecord(recordId) {
-            if (confirm("Emin misiniz? Bu işlem geri alınamaz!")) {
-                fetch(`/api/admin/delete${capitalize(selectedTable)}?id=${recordId}`, {
-                    method: 'DELETE'
+            if (confirm("Emin misiniz?")) {
+                fetch(`/api/admin/${selectedTable.toLowerCase()}s/${recordId}`, {
+                    method: "DELETE"
                 })
-                    .then(response => response.json())
-                    .then(data => loadTableData(selectedTable))
+                    .then(() => {
+                        loadTableData(selectedTable);
+                    })
                     .catch(error => console.error("Hata:", error));
             }
         }
 
-        function capitalize(str) {
-            return str.charAt(0).toUpperCase() + str.slice(1);
+        function capitalize(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
         }
+
+        window.onload = function() {
+            loadTableData("Employees");
+        };
     </script>
 
 </body>

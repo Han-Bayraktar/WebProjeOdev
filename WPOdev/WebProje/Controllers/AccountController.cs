@@ -38,22 +38,24 @@ namespace WebProje.Controllers
         new Claim(ClaimTypes.Name, existingUser.Name),
         new Claim(ClaimTypes.Email, existingUser.Email),
         new Claim(ClaimTypes.Role, existingUser.Role),
-        new Claim(ClaimTypes.NameIdentifier, existingUser.Id.ToString()) 
+        new Claim(ClaimTypes.NameIdentifier, existingUser.Id.ToString())
     };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-            // Role-based redirect
             if (existingUser.Role == "admin")
             {
-                return RedirectToAction("Index", "Admin");
+                TempData["Message"] = "Admin olarak giriş yaptınız. Hoş geldiniz Admin!";
+                return RedirectToAction("Index", "Home");
             }
             else
             {
-                return RedirectToAction("Index", "Home"); // Müşteri için ana sayfa
+                return RedirectToAction("Index", "Home"); 
             }
         }
+
+
 
         [Authorize(Roles = "admin")]
         public IActionResult AccessDenied()

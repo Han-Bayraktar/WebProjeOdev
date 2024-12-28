@@ -847,7 +847,6 @@ D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\WebProje.pdb
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\WebProje.genruntimeconfig.cache
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\ref\WebProje.dll
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-mjh7e5mouw.gz
-C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-y94qyiv78b.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\i2ja5uwaj0-mjh7e5mouw.gz
 D:\webprog\WPOdev\WebProje\bin\Debug\net9.0\Newtonsoft.Json.dll
 D:\webprog\WPOdev\WebProje\bin\Debug\net9.0\RestSharp.dll
@@ -855,8 +854,9 @@ D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-4t2hwejms0.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-4t2hwejms0.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\bin\Debug\net9.0\RestSharp.dll
-C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\x0r8hgplcy-fcsv7gzl4v.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\4cl2xaruea-4t2hwejms0.gz
 C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\eyke8loawa-4t2hwejms0.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-60co9gn26f.gz
 D:\webprog\WPOdev\WebProje\obj\Debug\net9.0\compressed\x0r8hgplcy-039oow8sw5.gz
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\x0r8hgplcy-039oow8sw5.gz
+C:\Users\Han Bayraktar\Source\Repos\WebProjeOdev\WPOdev\WebProje\obj\Debug\net9.0\compressed\4pta1yyqfm-60co9gn26f.gz

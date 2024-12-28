@@ -15,11 +15,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
-    }
+        if (TempData["Message"] != null)
+        {
+            ViewData["Message"] = TempData["Message"];
+        }
 
-    public IActionResult Privacy()
-    {
         return View();
     }
 
