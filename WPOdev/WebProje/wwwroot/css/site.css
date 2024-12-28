@@ -106,9 +106,16 @@ html, body {
     #About > span p {
         font-style: italic;
         margin: 1.5rem 0rem 0.625rem 0rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         font-weight:600;
-        font-size: 2rem;
+        font-size: 1.25rem;
+    }
+    #About > span > h1 {
+        font-style: italic;
+        font-weight: bold;
+    }
+    #About > span > h4{
+        font-style: italic;
     }
         #About > span p > b {
             font-size: 3.5rem;

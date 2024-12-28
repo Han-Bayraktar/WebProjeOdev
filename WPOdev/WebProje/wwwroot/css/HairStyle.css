@@ -3,9 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #f8f9fa;
+    padding-top: 100px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), /* Saydamlık efekti için beyaz renk */
+    url('/Resimler/robot.jpeg'); /* Arka plan resmi */
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center
 }
 
 h2 {
@@ -19,7 +25,8 @@ h2 {
 .container {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
